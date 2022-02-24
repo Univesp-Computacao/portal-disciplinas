@@ -1,0 +1,126 @@
+site_name: Univesp por Estudantes
+
+repo_name: Univesp-Computacao/algoritmos-programacao-computadores-I-e-II
+repo_url: https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II
+edit_uri: ""
+
+theme:
+  name: 'material'
+
+  static_templates:
+    - 404.html
+
+  icon:
+    repo: fontawesome/brands/git-alt 
+
+  include_search_page: false
+  search_index_only: true
+
+  language: pt-BR
+  features:
+    - content.code.annotate
+    - content.tabs.link
+    # - header.autohide
+    - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    #- navigation.tabs.sticky
+    #- navigation.top
+    #- navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    #- toc.integrate
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: yellow
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+
+# Extensões
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Customização
+extra:
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    cookies:
+      analytics:
+        name: Google Analytics
+        checked: True
+
+# tree da pagina
+nav:
+  - Inicio: index.md
+  - Git:
+    - Ultra Basico: git/ultra-basico.md
+    - Guia de Comandos: git/guia-comandos.md
+    - Perguntas?: git/perguntas-e-respostas.md
+  - Algoritmo e Programação:
+    - inicio: algoritmos_e_programação/algo.md
+  - Banco de Dados:
+    - inicio: banco_de_dados/ini.md
+  - Orientação a Objeto:
+    - OOP: OOP/oop.md
+  - Estrutura de Dados:
+    - Dados: estrutura_dados/est.md
+  - Fundamentos Web:
+    - Fundamentos Web: fundamentos_web/fund.md
