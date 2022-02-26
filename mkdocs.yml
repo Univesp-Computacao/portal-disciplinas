@@ -110,17 +110,20 @@ extra:
 # tree da pagina
 nav:
   - Inicio: index.md
-  - Git:
-    - Ultra Basico: git/ultra-basico.md
-    - Guia de Comandos: git/guia-comandos.md
-    - Perguntas?: git/perguntas-e-respostas.md
   - Algoritmo e Programação:
     - inicio: algoritmos_e_programação/algo.md
   - Banco de Dados:
     - inicio: banco_de_dados/ini.md
-  - Orientação a Objeto:
-    - OOP: OOP/oop.md
   - Estrutura de Dados:
     - Dados: estrutura_dados/est.md
   - Fundamentos Web:
     - Fundamentos Web: fundamentos_web/fund.md
+  - Git:
+    - Ultra Basico: git/ultra-basico.md
+    - Guia de Comandos: git/guia-comandos.md
+    - Perguntas?: git/perguntas-e-respostas.md
+  - Orientação a Objeto:
+    - OOP: OOP/oop.md
+  - Redes:
+    - Redes para Sobrevivência: rede/O que é Rede?.md
+    - Um pouco mais sobre Rede: rede/Mais sobre conexões.md
