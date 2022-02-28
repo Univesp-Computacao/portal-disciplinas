@@ -120,7 +120,7 @@ nav:
     - Fundamentos Web: fundamentos_web/fund.md
   - Git:
     - Porque Usar Git?: git/porque-usar-git.md
-    - Primeiros Passos: git/ultra-basico.md
+    - Primeiros Passos: git/primeiros-passos.md
     - Guia de Comandos: git/guia-comandos.md
     - Perguntas?: git/perguntas-e-respostas.md
   - Orientação a Objeto:
