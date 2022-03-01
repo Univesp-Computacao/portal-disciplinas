@@ -108,6 +108,8 @@ extra:
       analytics:
         name: Google Analytics
         checked: True
+        provider: google
+        property: G-6BSZF5CJEX
 
 # tree da pagina
 nav:
