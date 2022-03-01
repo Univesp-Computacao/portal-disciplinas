@@ -6,14 +6,14 @@ edit_uri: ""
 
 theme:
   name: 'material'
-  
-  
+  logo: assets/logo.png
 
   static_templates:
     - 404.html
 
   icon:
-    repo: fontawesome/brands/git-alt 
+    repo: fontawesome/brands/git-alt
+    favicon: assets/images/favicon.png
 
   include_search_page: false
   search_index_only: true
