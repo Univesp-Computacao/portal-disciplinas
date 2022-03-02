@@ -16,7 +16,7 @@ Tem um papel similar ao PATH. Essas variáveis dizem ao Python onde locar os arq
 Numbers , String, List, Tuple, Dictionary.
 
 ## Qual a diferença entre listas e tuplas ?
-A principal diferença entre lilstas e tuplas está na sintaxe: listas usam "[]" e tuplas usam "()". Outra importância fundamental é que tuplas são apenas dados de leitura, elas são inalteráveis. 
+A principal diferença entre listas e tuplas está na sintaxe: listas usam "[ ]" e tuplas usam "( )". Outra importância fundamental é que tuplas são apenas dados de leitura, elas são inalteráveis. 
 
 ## O que são dicionários em Python ?
 É um tipo de tabela hash. Dicionários trabalham como arrays associativos consistindo de pares de chave-valor. Uma chave será um tipo de dado e um valor, por sua vez, pode ser um Objeto arbitrário.
