@@ -117,12 +117,14 @@ nav:
   - Algoritmo e Programação:
     - Ementa: algoritmos_e_programação/algo.md
     - Perguntas e Respostas: algoritmos_e_programação/perguntas-e-respostas-python.md
+    - Exercício Simples: algoritmos_e_programação/exercicios-simples.md
   - Banco de Dados:
     - inicio: banco_de_dados/ini.md
   - Estrutura de Dados:
     - Dados: estrutura_dados/est.md
   - Fundamentos Web:
-    - Fundamentos Web: fundamentos_web/fund.md
+    - Ementa: fundamentos_web/fund.md
+    - Fundamentos HTML: fundamentos_web/html-basico.md
   - Git:
     - Porque Usar Git?: git/porque-usar-git.md
     - Primeiros Passos: git/primeiros-passos.md
