@@ -7,58 +7,55 @@
 :muscle: __Caso você encontre um erro ou outra maneira de fazer, e quiser colaborar, você pode abrir uma Issue ou mesmo enviar um Pull Request. [Entre em contato para saber mais.](https://t.me/+9ls6SK68QdhlNmZh)__
 
 ## Lista Exercícios:
-- exerc_01 - Calcular a duração de anos de um planeta.
-- exerc_02 - Calcular a soma de dígitos de um número randômico de 03 dígitos.
-- exerc_03 - Achar a área e o perímetro de um triângulo reto.
-- exerc_04 - Achar área de superfície de um cilindro.
-- exerc_05 - Achar perímetro e área de um círculo.
-- exerc_06 - Achar a equação da linha (y=kx+b) passando por dois pontos conhecidos.
-- exerc_07 - Determinar o número da letra no alfabeto.
-- exerc_08 - O número é negativo ou positivo?
-- exerc_09 - O número é par ou ímpar?
-- exerc_10 - Determinar o máximo inteiro de três.
-- exerc_11 - Checando a divisibilidade de um inteiro por outro.
-- exerc_12 - Convertendo Celsiu para Farenheit.
-- exerc_13 - Calcular massa, densidade ou volume.
-- exerc_14 - Em qual quadrante está o ponto?
-- exerc_15 - Determinar quando um ano é bissexto.
-- exerc_16 - Resolver equação de segundo grau.
-- exerc_17 - Adivinhar o número randômico
-- exerc_18 - Saída dos caracteres da tabela ASCII.
-- exerc_19 - Imprimir uma tabuada. 
-- exerc_20 - A soma e o produto dos dígitos de um número.
-- exerc_21 - Facorial.
-- exerc_22 - Sequência de Fibonacci.
-- exerc_23 - Achar uma equação quadrática que tenha soluções em uma faixa específica de coeficientes.
-- exerc_24 - Inverter a ordem dos dígitos de um número inteiro.
-- exerc_25 - Selecionando inteiros de uma string.
-- exerc_26 - Determinar a porcentagem de minúsculas e maiúsculas de uma string.
-- exerc_27 - Preencher uma array com números randômicos.
-- exerc_28 - Separar positivos e negativos de uma array.
-- exerc_29 - Disribuir valores por faixa.
-- exerc_30 - Achar a palavra mais longa de uma string.
-- exerc_31 - Converter um texto para uma lista de palavras sem pontuação.
-- exerc_32 - Bubble sort - 
-- exerc_33 - Selection sort
-- exerc_34 - O Crivo de Eratóstenes
-- exerc_35 - Classificar palavras em uma string pelo número de caractéres.
-- exerc_36 - Preencher uma matrix com números randômicos.
-- exerc_37 - Somar itens de todas linhas e colunas de uma matriz.
-- exerc_38 - A soma de elementos da diagonal de uma matriz.
-- exerc_39 - Dígitos estilizados com Unicode.
-- exerc_40 - Calcular preço por quantidade de produtos.
-- exerc_41 - Criar dicionário de duas listas.
-- exerc_42 - Deletar um item randômico de um dicionários.
-
+- [exerc_01 - Calcular a duração de anos de um planeta.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_01.py) 
+- [exerc_02 - Calcular a soma de dígitos de um número randômico de 03 dígitos.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_02.py) 
+- [exerc_03 - Achar a área e o perímetro de um triângulo reto.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_03.py) 
+- [exerc_04 - Achar área de superfície de um cilindro.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_04.py) 
+- [exerc_05 - Achar perímetro e área de um círculo.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_05.py) 
+- [exerc_06 - Achar a equação da linha (y=kx+b) passando por dois pontos conhecidos.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_06.py) 
+- [exerc_07 - Determinar o número da letra no alfabeto.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_07.py) 
+- [exerc_08 - O número é negativo ou positivo?](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_08.py) 
+- [exerc_09 - O número é par ou ímpar?](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_09.py) 
+- [exerc_10 - Determinar o máximo inteiro de três.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_10.py) 
+- [exerc_11 - Checando a divisibilidade de um inteiro por outro.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_11.py) 
+- [exerc_12 - Convertendo Celsiu para Farenheit.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_12.py) 
+- [exerc_13 - Calcular massa, densidade ou volume.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_13.py) 
+- [exerc_14 - Em qual quadrante está o ponto?](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_14.py) 
+- [exerc_15 - Determinar quando um ano é bissexto.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_15.py) 
+- [exerc_16 - Resolver equação de segundo grau.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_16.py) 
+- [exerc_17 - Adivinhar o número randômico](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_17.py) 
+- [exerc_18 - Saída dos caracteres da tabela ASCII.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_18.py) 
+- [exerc_19 - Imprimir uma tabuada. ](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_19.py) 
+- [exerc_20 - A soma e o produto dos dígitos de um número.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_20.py) 
+- [exerc_21 - Facorial.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_21.py) 
+- [exerc_22 - Sequência de Fibonacci.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_22.py) 
+- [exerc_23 - Achar uma equação quadrática que tenha soluções em uma faixa específica de coeficientes.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_23.py) 
+- [exerc_24 - Inverter a ordem dos dígitos de um número inteiro.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_24.py) 
+- [exerc_25 - Selecionando inteiros de uma string.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_25.py) 
+- [exerc_26 - Determinar a porcentagem de minúsculas e maiúsculas de uma string.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_26.py) 
+- [exerc_27 - Preencher uma array com números randômicos.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_27.py) 
+- [exerc_28 - Separar positivos e negativos de uma array.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_28.py) 
+- [exerc_29 - Disribuir valores por faixa.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_29.py) 
+- [exerc_30 - Achar a palavra mais longa de uma string.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_30.py) 
+- [exerc_31 - Converter um texto para uma lista de palavras sem pontuação.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_31.py) 
+- [exerc_32 - Bubble sort - ](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_32.py) 
+- [exerc_33 - Selection sort](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_33.py) 
+- [exerc_34 - O Crivo de Eratóstenes](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_34.py) 
+- [exerc_35 - Classificar palavras em uma string pelo número de caractéres.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_35.py) 
+- [exerc_36 - Preencher uma matrix com números randômicos.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_36.py) 
+- [exerc_37 - Somar itens de todas linhas e colunas de uma matriz.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_37.py) 
+- [exerc_38 - A soma de elementos da diagonal de uma matriz.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_38.py) 
+- [exerc_39 - Dígitos estilizados com Unicode.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_39.py) 
+- [exerc_40 - Calcular preço por quantidade de produtos.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_40.py) 
+- [exerc_41 - Criar dicionário de duas listas.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_41.py) 
+- [exerc_42 - Deletar um item randômico de um dicionários.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_42.py) 
 ### Exercícios utilizando funções:
-- exerc_43 - Achar média de dois números.
-- exerc_44 - Preencher uma lista com números.
-- exerc_45 - Calcular média aritmética de uma lista de elementos.
-- exerc_46 - Sequência de Fibonacci.
-- exerc_47 - Sequência de FIbonacci (recursão).
-- exerc_48 - Fatorial (recursão).
-- exerc_49 - Inverter a ordem de uma string.
-- exerc_50 - Busca Binária.
-- exerc_51 - Checar se um número é primo. 
-
-
+- [exerc_43 - Achar média de dois números.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_43.py) 
+- [exerc_44 - Preencher uma lista com números.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_44.py) 
+- [exerc_45 - Calcular média aritmética de uma lista de elementos.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_45.py) 
+- [exerc_46 - Sequência de Fibonacci.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_46.py) 
+- [exerc_47 - Sequência de FIbonacci (recursão).](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_47.py) 
+- [exerc_48 - Fatorial (recursão).](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_48.py) 
+- [exerc_49 - Inverter a ordem de uma string.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_49.py) 
+- [exerc_50 - Busca Binária.](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_50.py) 
+- [exerc_51 - Checar se um número é primo. ](https://github.com/Univesp-Computacao/algoritmos-programacao-computadores-I-e-II/blob/main/exercicios-simples/exerc_51.py)
