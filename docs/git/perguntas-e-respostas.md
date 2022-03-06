@@ -78,7 +78,8 @@ Faz o upload do conteúdo de um diretório local para um repositório remoto.
 Este comando busca e faz o download de um repositório remoto e imediatamente faz o update do repositório local para combinar com o remoto.
 
 ## O que é fork no GitHub?
-É uma bifurcação de um projeto que você gerencia ou de outro proprietario, mantendo uma conexão com o projeto original.
+É uma bifurcação de um projeto que você gerencia ou de outro proprietario, mantendo uma conexão com o projeto original:
+
 ![img](https://i.postimg.cc/nzVZTVnT/area.png){ loading=lazy }
 
 
@@ -130,7 +131,7 @@ git init [project-name]
 
 ## O que é Git Bash?
 O Git Bash é o aplicativo para Windows que oferece a camada de emulação para a experiência de linha de comando Git usando o bash.
- 
+
 ## O que é Git Stash?
 É Um jeito de salvar o trabalho para mais tarde, quando você ainda não quer adicionar e fazer o commit.
 
