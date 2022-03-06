@@ -79,7 +79,7 @@ Este comando busca e faz o download de um repositório remoto e imediatamente fa
 
 ## O que é fork no GitHub?
 É uma bifurcação de um projeto que você gerencia ou de outro proprietario, mantendo uma conexão com o projeto original.
-![img](https://i.postimg.cc/nzVZTVnT/area.png)
+![img](https://i.postimg.cc/nzVZTVnT/area.png){ loading=lazy }
 
 
 ## Como adicionar arquivos na área de staging ? 
