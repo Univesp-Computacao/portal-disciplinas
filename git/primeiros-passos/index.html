@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.5">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.3">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2d9f7617.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e8d9bf0c.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
@@ -27,7 +27,6 @@
     
     
       
-        
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
@@ -584,6 +583,10 @@
         
           
         
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_5">
@@ -620,6 +623,34 @@
     <li class="md-nav__item">
       <a href="../../fundamentos_web/html-basico/" class="md-nav__link">
         Fundamentos HTML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fundamentos_web/glossario-web/" class="md-nav__link">
+        Glossário Web
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fundamentos_web/guias-tutoriais-etc/" class="md-nav__link">
+        Guias, Tutoriais, etc.
       </a>
     </li>
   
@@ -1101,37 +1132,37 @@ outros.
 <ol>
 <li>Inicie um terminal de comandos ou git bash</li>
 <li>Certifique-se de que o git está istalado com o comando:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git --version
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>git --version
 </code></pre></div></li>
 <li>Se você recebeu confirmação da versão, continue.</li>
 </ol>
 <h2 id="configurando-github-localmente"><img alt="✨" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2728.svg" title=":sparkles:" /> Configurando GitHub localmente<a class="headerlink" href="#configurando-github-localmente" title="Permanent link">&para;</a></h2>
 <p>Inicie o Terminal e digite o seguinte comando para adicionar seu nome de usuário Github:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git config--global user.name <span class="s2">&quot;seu_github_username&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>git config--global user.name <span class="s2">&quot;seu_github_username&quot;</span>
 </code></pre></div></p>
 <p>Em seguida, adicione seu e-mail usando este comando:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git config--global user.email <span class="s2">&quot;seu_email@github.com&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>git config--global user.email <span class="s2">&quot;seu_email@github.com&quot;</span>
 </code></pre></div></p>
 <h2 id="iniciando-um-repositorio">Iniciando um repositório<a class="headerlink" href="#iniciando-um-repositorio" title="Permanent link">&para;</a></h2>
 <p>Navegue pelo terminal de comandos até o diretório em que deseja iniciar o repositório. 
 Certifique-se que está no diretório correto com o comando pwd (print working directory):
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">pwd</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="nb">pwd</span>
 </code></pre></div>
 e digite o comando que incia o Git no seu diretório corrente:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>git init
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>git init
 </code></pre></div>
 ou, caso o repositório já exista no GitHub, você poderá clonar:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>git clone
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>git clone
 </code></pre></div></p>
 <h2 id="adicionando-arquivos-e-preparando-o-commit"><img alt="✨" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2728.svg" title=":sparkles:" /> Adicionando Arquivos e Preparando o Commit:<a class="headerlink" href="#adicionando-arquivos-e-preparando-o-commit" title="Permanent link">&para;</a></h2>
 <p>Agora que você já trabalhou no seu código é hora de adicioná-lo para a versão corrente. 
 Para aicionar arquivos use o comando:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>git add
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>git add
 </code></pre></div></p>
 <h2 id="analisando-o-status-antes-do-commit"><img alt="✨" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2728.svg" title=":sparkles:" /> Analisando o Status antes do Commit:<a class="headerlink" href="#analisando-o-status-antes-do-commit" title="Permanent link">&para;</a></h2>
 <p>O Git permite que você veja as mudanças adicionadas antes de comitá-las, ou seja, transferí-las para a versão corrente. 
 Com o comando: 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>git status
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>git status
 </code></pre></div>
 Você receberá um texto em inglês mais ou menos assim: </p>
 <p><img alt="image" src="https://user-images.githubusercontent.com/72423464/155199941-05ae18c1-364d-4315-8409-8f3a1af8d2df.png" /></p>
@@ -1142,21 +1173,21 @@ e depois apontam arquivos que ainda não foram adicionados para o commit.</p>
 <p>Com tudo conferido você já pode mandar suas alterações para a versão mais recente do código, e isso se chama <strong>fazer commit</strong>.
 Commit é uma palavra em inglês que no caso poderia ser traduzida para entregar, enviar.
 Para dar um commit é muito simples:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>git commit -m <span class="s2">&quot;sua mensagem de commit&quot;</span> 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a>git commit -m <span class="s2">&quot;sua mensagem de commit&quot;</span> 
 </code></pre></div></p>
 <p>Usa-se o comando commit com a tag "-m" para escrevermos uma mensagem. A mensagem de commit deverá ser clara e limpa, no começo o mais comum é 
 "primeiro commit", "atualizando arquivo ", etc.</p>
 <h2 id="adicionando-um-repositorio-remoto"><img alt="✨" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2728.svg" title=":sparkles:" /> Adicionando um repositório remoto:<a class="headerlink" href="#adicionando-um-repositorio-remoto" title="Permanent link">&para;</a></h2>
 <p>Com o commit, atualizamos apenas a versão do código que está em nossa máquina. Agora enviaremos ao repositório no GitHUb: 
 Se o repositório foi inicializado no diretório local precisamos dar o seguinte comando: </p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>git remote add origin <span class="o">[</span>url-do-seu-repositorio-do-github<span class="o">]</span>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a>git remote add origin <span class="o">[</span>url-do-seu-repositorio-do-github<span class="o">]</span>
 </code></pre></div>
 Esse passo é para você dizer ao git qual é o seu endereço do diretório. Perceba que a URL que você deve inserir termina com ".git"
 Você acha nessa parte do github:
 <img alt="image" src="https://user-images.githubusercontent.com/72423464/155206018-56727358-d41d-414a-af8c-7b61295e08f8.png" /></p>
 <p>Escolha o método HTTPS se ainda não tiver consigurado o SSH.</p>
 <h2 id="levantando-as-modificacoes-feitas-para-o-repositorio-remoto-push"><img alt="✨" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2728.svg" title=":sparkles:" /> Levantando as modificações feitas para o repositório remoto (push)<a class="headerlink" href="#levantando-as-modificacoes-feitas-para-o-repositorio-remoto-push" title="Permanent link">&para;</a></h2>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>git push -u origin <span class="o">[</span>nome-da-branch<span class="o">]</span>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a>git push -u origin <span class="o">[</span>nome-da-branch<span class="o">]</span>
 </code></pre></div>
 Se tudo der certo você deverá acessar seu repositório do GitHub e ele já estará atualizado com as últimas modificações. Verifique!
 Em caso de alguma mensagem de erro no terminal, procure interpretar o contexto.
@@ -1164,7 +1195,7 @@ O comando git push é essencial para levantar seus arquivos para o repositório 
 A branch incialmente pode ser chamada de main ou master, sempre verifique no git status qual é sua branch (essa é a informação da primeira linha).</p>
 <h2 id="atualizando-o-repositorio-remoto-com-o-atual-pull"><img alt="✨" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2728.svg" title=":sparkles:" /> Atualizando o repositório remoto com o atual (pull):<a class="headerlink" href="#atualizando-o-repositorio-remoto-com-o-atual-pull" title="Permanent link">&para;</a></h2>
 <p>para você atualizar o seu diretório com o repositório remoto dê o comando
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>git pull
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a>git pull
 </code></pre></div>
 Verifique se no diretório da sua máqiuna constam todos os arquivos que constam no github. </p>
 <p>Para aprender mais sobre os comandos git e o github confira a documentação do GitHub:
@@ -1237,7 +1268,7 @@ Verifique se no diretório da sua máqiuna constam todos os arquivos que constam
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.expand", "navigation.indexes", "navigation.sections", "navigation.tabs", "search.highlight", "search.share", "search.suggest", "toc.follow"], "translations": {"clipboard.copy": "Copiar para \u00e1rea de Transfer\u00eancia", "clipboard.copied": "Copiado para \u00e1rea de Transfer\u00eancia", "search.config.lang": "pt", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Buscar", "search.result.placeholder": "Digite para iniciar a busca", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Perdido", "select.version.title": "Selecione a vers\u00e3o"}, "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
     
     
-      <script src="../../assets/javascripts/bundle.467223ff.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b88e97c5.min.js"></script>
       
     
   </body>
