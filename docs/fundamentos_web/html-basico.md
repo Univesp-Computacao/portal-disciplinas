@@ -6,7 +6,7 @@
         </head>
         <body>
             <h1> Aqui temos um títutlo H1</h1>
-            <p> E aqui emos um parágrafo.</p>
+            <p> E aqui temos um parágrafo.</p>
         </body>
     </html>
 ```
@@ -33,7 +33,7 @@ Dentro do body colocamos todas as outras tags que irão compor o documento como:
 - **WebSocket** - Uma nova geração bidirecional de comunicação para tecnologias web.
 - **Canvas** - Permite desenho bidimensional utilizando JavaScript.
 - **Audio e Vídeo** - Agora isso já vem nativo no HTML, não precisa de terceiros.
-- **Server-Sent Events** - Permite toda a indústri de streaming.
+- **Server-Sent Events** - Permite toda a indústria de streaming.
 - **Geolocalização** - Os visitantes podem decidir compartilhar a geolocalização com a aplicação web.
 - **Drag and drop** - Arrastar e jogar, função que permite um jeito interativo de manipular arquivos.
 - **Microdata** - Permite que o autor customize seus próprio elementos semântico, relação entre item <-> propriedades. 
@@ -57,7 +57,7 @@ Para fazer ligação com um arquivo CSS, ainda dentro da tag **< head >** abra u
 ```html
 <html>   
     <title>Título</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css"> <!--linkando CSS -->
 </html>
 ```
 

@@ -125,6 +125,8 @@ nav:
   - Fundamentos Web:
     - Ementa: fundamentos_web/fund.md
     - Fundamentos HTML: fundamentos_web/html-basico.md
+    - Glossário Web: fundamentos_web/glossario-web.md
+    - Guias, Tutoriais, etc.: fundamentos_web/guias-tutoriais-etc.md
   - Git:
     - Porque Usar Git?: git/porque-usar-git.md
     - Primeiros Passos: git/primeiros-passos.md
