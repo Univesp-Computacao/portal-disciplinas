@@ -1,8 +1,8 @@
 # Guias, Tutoriais e Referências para os fundamentos da Web
 
-:pushpin: Lista composta de materiais diretamente relacionados aos Fundamentos da Web.
+### :pushpin: Lista composta de materiais diretamente relacionados aos Fundamentos da Web.
 
-:construction: Ajude-nos a construir essa lista: dê suas sugestões!
+### :construction: Ajude-nos a construir essa lista: dê suas sugestões!
 ### Referências
 - [Consórcio World Wide Web (pt-BR)](https://www.w3c.br)
 - [IETF - Internet Engineering Task Force (en)](https://www.ietf.org)
