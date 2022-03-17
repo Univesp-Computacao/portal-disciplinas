@@ -1,0 +1,27 @@
+name: mkdocs auto
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "**.md"
+      - "mkdocs.yml"
+  workflow_dispatch:
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v2
+      - run: pip install --upgrade pip && pip install mkdocs && pip install mkdocs-material
+      - run: git config user.name 'github-actions[bot]' && git config user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: build
+        run: mkdocs build
+
+      - name: Publish docs
+        run: mkdocs gh-deploy
