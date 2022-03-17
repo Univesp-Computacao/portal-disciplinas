@@ -1,1 +1,1 @@
-https://univesp-computacao.github.io/segundo_semestre/
+## Criar um Readme mais bonito e informativo
