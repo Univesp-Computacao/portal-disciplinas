@@ -28,3 +28,4 @@
 - [Web Skills - habilidades Web ](https://andreasbm.github.io/web-skills/)
 - [Origamid - Flex Box](https://origamid.com/projetos/flexbox-guia-completo/)
 - [CSS Tricks](https://css-tricks.com)
+- [HTTP Cats - um jeito fofinho de entender Status HTTP](https://http.cat/)
