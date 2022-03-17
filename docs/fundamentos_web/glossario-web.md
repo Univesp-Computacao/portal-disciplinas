@@ -29,6 +29,9 @@ de conteúdos para a Web.
 __Protocolo da Internet__: é um protocolo de comunicação usado entre todas as máquinas 
 em rede para encaminhamento dos dados, exemplo: _200.20.15.22_.
 
+## DNS - Domain Name System
+__Sistema de Nomes de Domínios__: é um sistema hierárquico e distribuído de gestão de nomes para computadores, serviços ou qualquer máquina conectada à Internet ou a uma rede privada.
+
 ## HTTP - Hypertext Tranfer Protocol
 __Protocolo de Transferência de Hipertexto__: é um protocolo de comunicação utilizado para 
 sistemas de informação de hipermídia, distribuídos e colaborativos.
@@ -38,11 +41,11 @@ Protocolo de Transferência de Arquivos: um padrão usado para transferir arquiv
 servidor e cliente.
 
 ## Web Server 
-É o software responsável por aceitar uma requisição via HTTP. 
+É o software responsável por aceitar uma requisição via HTTP. Apache e Nginx são um dos servidores web mais populares.
 
 ## Web Client/Browser
 É o software que faz a requisição de conteúdo da Web a um servidor; 
-que armazena exibe o conteúdo do servidor na tela d cliente, usando o HTTP.
+que armazena exibe o conteúdo do servidor na tela de cliente, usando o HTTP.
 
 ## URI - Uniform Resource Identifier
 __Identificador Uniforme de Recursos__: sequência única de caracteres que identificam 
