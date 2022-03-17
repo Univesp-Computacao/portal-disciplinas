@@ -2,7 +2,7 @@
 name = "git_como_usar"
 version = "0.1.0"
 description = "Projeto de alunos da Univesp para aprender e compartilhar informações sobre o git"
-authors = ["Igor Esposito <sposigor@gmail.com>"]
+authors = ["GitHub Univesp"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
