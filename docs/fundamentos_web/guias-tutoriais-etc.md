@@ -9,6 +9,7 @@
 - [W3 Schools  (pt-BR)](https://www.w3schools.com/html/default.asp)
 - [HTTP - mdn web docs (pt-BR)](https://developer.mozilla.org/pt-BR/docs/Web/HTTP)
 - [Vocabulário para microdata (en)](https://schema.org/docs/gs.html)
+- [Can I Use? - site para verificar suporte dos brownsers a tecnologias web.](https://caniuse.com)
 
 ### Tutoriais
 - [Learn to Code HTML & CSS (en)](https://learn.shayhowe.com)
