@@ -2,9 +2,9 @@
 
 
 A manipulação de arquivos sempre foi um tema central na computação, pois afinal,
-não é muito útil ter que executar repetidas vezes o mesmo código para manter um histórico de resultados. 
+não é muito útil ter que executar repetidas vezes o mesmo código para manter um histórico de resultados, já que, a linguagem de programação em si, não é capaz de armazenar dados.
 
-A manipulação de arquivos é um recurso poderoso que serve basicmanete para transferr informação para alguma arquivo de texto, que seja facilmente guardado por qualquer tipo de Sistema Operacional (*.html, *.txt, *.csv, *.md, etc.). Mas por se tratar do uso direto de recursos da máquina, 
+A manipulação de arquivos é um recurso poderoso que serve basicamente para transferir informação para alguma arquivo de texto, que seja facilmente guardado por qualquer tipo de Sistema Operacional (*.html, *.txt, *.csv, *.md, etc.). Mas por se tratar do uso direto de recursos da máquina, 
 devemos monitorar esse uso para não prejudicar apenas a aplicação mas o sistema operacional de quem a usa. 
 
 Mas por que manipular arquivos é tão especial? Porque permite de maneira simples
@@ -37,7 +37,7 @@ Usamos o método `write()` para escrever dentro do arquivo, passando como argume
 Com o `with` no início da expressão estamos indicando que estamos trabalhando **em contexto**, ou seja, o arquivo será automaticamente fechado após o uso. Isso simplesmente nos ajuda a usar com precisão os recursos da máquina.
 
 ***
-# Criando um arquivo .txt partir de uma API
+# Criando um arquivo .txt a partir de uma API
 
 Para tornar o uso de arquivos verossímil à realidade vamos dar um exemplo bem casual. Suponha que você precise consultar um CEP e armazenaro bairro, a cidade e a uf.
 
@@ -70,16 +70,16 @@ A cada vez que executarmos este código e passarmos um cep válido, ficará salv
 
 ![image](https://user-images.githubusercontent.com/72423464/169721114-ffcd93dd-03db-4859-a0cd-a98870a6f870.png)
 
-Observação
+## Observação
 
 A proposta desse código era apenas para explorar um pouco da combinação do módulo requests (que deve ser instalado via pip) e a manipulação de arquivos, usando métodos diretamente do Python, como o open(), write(), readlines() entre outros.
 
-Há muito a se fazer com respeito da tratativa de exceções. A primeira e mais óbvia seria que dentro do input apenas fosem aceitos números e que fosse 08 no total. 
+Há muito a se fazer com respeito da tratativa de exceções. A primeira e mais óbvia seria que dentro do input apenas fosem aceitos apenas números e que o tamanho dessa string fosse igual a 8.
 
 
 # Referências e links úteis
 
-https://pypi.org/project/requests/
-https://viacep.com.br
+- https://pypi.org/project/requests/
+- https://viacep.com.br
 
 
