@@ -846,8 +846,8 @@
 
 <h1 id="manipulacao-de-arquivos">Manipulação de Arquivos<a class="headerlink" href="#manipulacao-de-arquivos" title="Permanent link">&para;</a></h1>
 <p>A manipulação de arquivos sempre foi um tema central na computação, pois afinal,
-não é muito útil ter que executar repetidas vezes o mesmo código para manter um histórico de resultados. </p>
-<p>A manipulação de arquivos é um recurso poderoso que serve basicmanete para transferr informação para alguma arquivo de texto, que seja facilmente guardado por qualquer tipo de Sistema Operacional (*.html, *.txt, *.csv, *.md, etc.). Mas por se tratar do uso direto de recursos da máquina, 
+não é muito útil ter que executar repetidas vezes o mesmo código para manter um histórico de resultados, já que, a linguagem de programação em si, não é capaz de armazenar dados.</p>
+<p>A manipulação de arquivos é um recurso poderoso que serve basicamente para transferir informação para alguma arquivo de texto, que seja facilmente guardado por qualquer tipo de Sistema Operacional (*.html, *.txt, *.csv, *.md, etc.). Mas por se tratar do uso direto de recursos da máquina, 
 devemos monitorar esse uso para não prejudicar apenas a aplicação mas o sistema operacional de quem a usa. </p>
 <p>Mas por que manipular arquivos é tão especial? Porque permite de maneira simples
 a persistência dos dados, ou seja, estamos transferindo o que o Python armazena na RAM para um HD/SSD.</p>
@@ -866,7 +866,7 @@ e o HD/SSD.</p>
 <p>Usamos o método <code>write()</code> para escrever dentro do arquivo, passando como argumento uma string ou mesmo uma outra variável que aponte para uma string.</p>
 <p>Com o <code>with</code> no início da expressão estamos indicando que estamos trabalhando <strong>em contexto</strong>, ou seja, o arquivo será automaticamente fechado após o uso. Isso simplesmente nos ajuda a usar com precisão os recursos da máquina.</p>
 <hr />
-<h1 id="criando-um-arquivo-txt-partir-de-uma-api">Criando um arquivo .txt partir de uma API<a class="headerlink" href="#criando-um-arquivo-txt-partir-de-uma-api" title="Permanent link">&para;</a></h1>
+<h1 id="criando-um-arquivo-txt-a-partir-de-uma-api">Criando um arquivo .txt a partir de uma API<a class="headerlink" href="#criando-um-arquivo-txt-a-partir-de-uma-api" title="Permanent link">&para;</a></h1>
 <p>Para tornar o uso de arquivos verossímil à realidade vamos dar um exemplo bem casual. Suponha que você precise consultar um CEP e armazenaro bairro, a cidade e a uf.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span> <span class="nn">requests</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
@@ -890,12 +890,14 @@ e o HD/SSD.</p>
 <p>O próximo passo é transformar esse <code>requests.models</code> em um dicionário no python utilizando o método <code>json()</code>. A partir de agora podemos manipular o conteúdo propriamente dito da nossa requisição, pois agora estamos trabalhando com um objeto de tipo <code>&lt;class 'dict'&gt;</code>.</p>
 <p>A cada vez que executarmos este código e passarmos um cep válido, ficará salvo em um arquivo chamado 'enderecos.txt' as informações que selecionamos.</p>
 <p><img alt="image" src="https://user-images.githubusercontent.com/72423464/169721114-ffcd93dd-03db-4859-a0cd-a98870a6f870.png" /></p>
-<p>Observação</p>
+<h2 id="observacao">Observação<a class="headerlink" href="#observacao" title="Permanent link">&para;</a></h2>
 <p>A proposta desse código era apenas para explorar um pouco da combinação do módulo requests (que deve ser instalado via pip) e a manipulação de arquivos, usando métodos diretamente do Python, como o open(), write(), readlines() entre outros.</p>
-<p>Há muito a se fazer com respeito da tratativa de exceções. A primeira e mais óbvia seria que dentro do input apenas fosem aceitos números e que fosse 08 no total. </p>
+<p>Há muito a se fazer com respeito da tratativa de exceções. A primeira e mais óbvia seria que dentro do input apenas fosem aceitos apenas números e que o tamanho dessa string fosse igual a 8.</p>
 <h1 id="referencias-e-links-uteis">Referências e links úteis<a class="headerlink" href="#referencias-e-links-uteis" title="Permanent link">&para;</a></h1>
-<p><a href="https://pypi.org/project/requests/">https://pypi.org/project/requests/</a>
-<a href="https://viacep.com.br">https://viacep.com.br</a></p>
+<ul>
+<li><a href="https://pypi.org/project/requests/">https://pypi.org/project/requests/</a></li>
+<li><a href="https://viacep.com.br">https://viacep.com.br</a></li>
+</ul>
 
               
             </article>
