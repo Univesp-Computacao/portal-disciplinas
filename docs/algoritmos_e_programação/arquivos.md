@@ -4,7 +4,7 @@
 A manipulação de arquivos sempre foi um tema central na computação, pois afinal,
 não é muito útil ter que executar repetidas vezes o mesmo código para manter um histórico de resultados, já que, a linguagem de programação em si, não é capaz de armazenar dados.
 
-A manipulação de arquivos é um recurso poderoso que serve basicamente para transferir informação para alguma arquivo de texto, que seja facilmente guardado por qualquer tipo de Sistema Operacional (*.html, *.txt, *.csv, *.md, etc.). Mas por se tratar do uso direto de recursos da máquina, 
+A manipulação de arquivos é um recurso poderoso que serve basicamente para transferir informação para algum arquivo de texto, que seja facilmente guardado por qualquer tipo de Sistema Operacional (*.html, *.txt, *.csv, *.md, etc.). Mas por se tratar do uso direto de recursos da máquina, 
 devemos monitorar esse uso para não prejudicar apenas a aplicação mas o sistema operacional de quem a usa. 
 
 Mas por que manipular arquivos é tão especial? Porque permite de maneira simples
@@ -21,7 +21,7 @@ with open("output.txt", 'w') as arquivo:
 Como **resultado** deste comando temos a transferência do valor de string que a variável `mensagem` assumiu temporariamente na memória RAM e escrevemos em um HD/SSD, de modo a preservar a informação, visto que o linguagens de programação isoladas não possuem poder de persistência de dados, precisando armazenar em arquivos diretamente no Sistema Operacional, ou, em softwares especializadas, como Bancos de Dados.
 
 
-Sem precisar importar nenhum módulo específico utilizamos a função open() que retorna um objeto de manipulação de arquivos.
+Sem precisar importar nenhum módulo específico utilizamos a função `open()` que retorna um objeto de manipulação de arquivos.
 
 
 Dentro da função `open()`, passamos apenas dois parâmetros: o **nome do arquivo** e o **modo de abertura**, e este arquivo ficou
@@ -31,7 +31,6 @@ Alguns podem pensar que a funçção `open()` irá abrir o arquivo no sistema op
 e o HD/SSD.
 
 
-
 Usamos o método `write()` para escrever dentro do arquivo, passando como argumento uma string ou mesmo uma outra variável que aponte para uma string.
 
 Com o `with` no início da expressão estamos indicando que estamos trabalhando **em contexto**, ou seja, o arquivo será automaticamente fechado após o uso. Isso simplesmente nos ajuda a usar com precisão os recursos da máquina.
@@ -39,15 +38,19 @@ Com o `with` no início da expressão estamos indicando que estamos trabalhando 
 ***
 # Criando um arquivo .txt a partir de uma API
 
-Para tornar o uso de arquivos verossímil à realidade vamos dar um exemplo bem casual. Suponha que você precise consultar um CEP e armazenaro bairro, a cidade e a uf.
+Para tornar o uso de arquivos verossímil à realidade vamos dar um exemplo bem casual. Suponha que você precise consultar um CEP e armazenaro bairro, a cidade e a UF.
 
 ```python
 import requests
 
 mensagem = "\n Olá, digite o cep que desejas armazenar: \n"
+
 cep = input(mensagem)
+
 url = f"http://viacep.com.br/ws/{cep}/json/"
+
 retorno = requests.get(url)
+
 conteudo = retorno.json()
 
 bairro = conteudo['bairro']
