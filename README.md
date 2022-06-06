@@ -3,8 +3,6 @@
 
 <img src="https://user-images.githubusercontent.com/72423464/159480301-c5ccd8a3-40d0-491b-8327-ae332d180803.png" alt="drawing" width="520"/>
 
-✒️ Este projeto visa trazer por via de uma página estática na Web materiais relacionados às disciplinas básicas do eixo de computação cujo conteúdo é possível ser praticado com arquivos e códigos dentro do Github. 
-
 ## Disciplinas
 
  :zap: Algoritmo e Programação de Computadores I e II (COM110 e COM120)
@@ -20,7 +18,7 @@
 Ementa e Bibliografia estão de acordo com o [Projeto Curricular de 2020-2022](https://apps.univesp.br/manual-do-aluno/assets/PPC/tecnologia-da-informacao/PPC-BTI.pdf). 
 
 ## Sobre este projeto
-O projeto foi construído com MKDocs, uma biblioteca do Python cuja principal funcionalidade é transformar um conjunto de arquivos .md em um riquiíssimo website estático com o esquema de documentação. A configuração do projeto é feita em um arquivo de configuração .yaml.
+O projeto foi construído com MKDocs, uma biblioteca do Python cuja principal funcionalidade é transformar um conjunto de arquivos `.md` em um website estático com o esquema de documentação. A configuração do projeto é feita em um arquivo de configuração `.yaml`.
 
 O principal motivo da escolha do MKDocs como compilador deste projeto foi a sua simplicidade em criar/manter o  conteúdo. A linguagem Markdown é um dos melhores jeitos para se tomar notas e tem ganhado espaço no mundo das tecnologia. Além disso, o MKDocs possui uma extensão, o MKDocs - Materials, a página é facilmente estilizada, tornando seu aspecto muito agradável além de altamente responsivo.
 
