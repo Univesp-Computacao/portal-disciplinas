@@ -62,7 +62,11 @@ Por padrão é dividida em três partes:
 - __Linhas de cabeçalhos__: inclui informações complementares sobre a requisição no formato campo e valor.
 - __Corpo da entidade__:dados adicionais (arquivos, formulários).
 
+## HTML
+HyperText Markup Language é a linguagem padrão dos docuentos que cirvulam na web através dos protocolos HTTP. É u documento leve que se organiza em tags.
 
+## CSS
+Cascading Style Sheet é a linguagem usada para apresentação do documento HTML. Com ela é possível editar o layout, as cores e fontes, etc.  
 
 # Referências
 [https://www.wikipedia.org](https://www.wikipedia.org)
