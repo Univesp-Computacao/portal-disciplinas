@@ -125,6 +125,7 @@ nav:
     - inicio: banco_de_dados/ini.md
   - Estrutura de Dados:
     - Dados: estrutura_dados/est.md
+    - Conceitos Básicos: estrutura_dados/conceitosbasicos.md
   - Fundamentos Web:
     - Ementa: fundamentos_web/fund.md
     - Fundamentos HTML: fundamentos_web/html-basico.md
