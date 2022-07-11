@@ -119,8 +119,7 @@ nav:
     - Perguntas e Respostas: algoritmos_e_programação/perguntas-e-respostas-python.md
     - Exercício Simples: algoritmos_e_programação/exercicios-simples.md
     - Exemplos módulo Turtle: algoritmos_e_programação/turtle.md
-    - Manipulando arquivos: algoritmos_e_programação/arquivos.md
-    - teste: algoritmos_e_programação/teste.md
+    - Manipulando arquivos: algoritmos_e_programação/arquivos.md    
   - Banco de Dados:
     - inicio: banco_de_dados/ini.md
   - Estrutura de Dados:
