@@ -74,7 +74,7 @@ void imprimir() // imprimir() é o nome da função
 int main()
 {
     std::cout << "Começando a main()\n";
-    doPrint(); // Interrompendo a main() por chamar a função imprimir().  
+    imprimir(); // Interrompendo a main() por chamar a função imprimir().  
     std::cout << "Encerrando a main()\n"; // esta instrução é feita depois da conclusão da função imprimir()
 
     return 0;
