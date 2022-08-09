@@ -125,6 +125,7 @@ nav:
   - Estrutura de Dados:
     - Dados: estrutura_dados/est.md
     - Conceitos Básicos C++: estrutura_dados/conceitosbasicos.md
+    - Ponteiro: estrutura_dados/pointer.md
   - Fundamentos Web:
     - Ementa: fundamentos_web/fund.md
     - Fundamentos HTML: fundamentos_web/html-basico.md
