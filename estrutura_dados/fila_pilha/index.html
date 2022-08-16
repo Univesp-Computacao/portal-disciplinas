@@ -13,7 +13,7 @@
     
     
       
-        <title>inicio - Univesp por Estudantes</title>
+        <title>Fila e Pilha - Univesp por Estudantes</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#banco-de-dados" class="md-skip">
+        <a href="#fila-e-pilha" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              inicio
+              Fila e Pilha
             
           </span>
         </div>
@@ -224,15 +224,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../../banco_de_dados/ini/" class="md-tabs__link">
         Banco de Dados
       </a>
     </li>
@@ -248,7 +246,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../estrutura_dados/est/" class="md-tabs__link">
+      <a href="../est/" class="md-tabs__link">
         Estrutura de Dados
       </a>
     </li>
@@ -483,14 +481,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -515,21 +511,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../banco_de_dados/ini/" class="md-nav__link">
         inicio
       </a>
-      
     </li>
   
 
@@ -583,7 +569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../estrutura_dados/est/" class="md-nav__link">
+      <a href="../est/" class="md-nav__link">
         Dados
       </a>
     </li>
@@ -597,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../estrutura_dados/conceitosbasicos/" class="md-nav__link">
+      <a href="../conceitosbasicos/" class="md-nav__link">
         Conceitos Básicos C++
       </a>
     </li>
@@ -611,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../estrutura_dados/pointer/" class="md-nav__link">
+      <a href="../pointer/" class="md-nav__link">
         Ponteiro
       </a>
     </li>
@@ -865,6 +851,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pilha-ou-stack" class="md-nav__link">
+    Pilha ou Stack
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -877,24 +878,27 @@
                 
 
 
-<h1 id="banco-de-dados">Banco de Dados<a class="headerlink" href="#banco-de-dados" title="Permanent link">&para;</a></h1>
-<p><strong>Objetivos:</strong> Projetos e implementações de bancos de dados.</p>
-<p><strong>Ementa:</strong> Introdução a banco de dados (Processamento de Arquivos vs SGBDs, arquitetura de SGBDs), modelagem de dados (conceitual, modelo entidade-
-relacionamento), Linguagem de Consulta e Manipulação de Dados (SQL), Indexação, Bancos de Dados Não Relacionais ou NoSQL (Bancos de Dados Orientados a
-Documentos, Bancos de Dados em Colunas, Bancos de Orientados a Grafos). Mapeamento objeto-relacional (ORM).</p>
-<p><strong>Bibliografia Base:</strong>
-- Elmasri, Ramez; Navathe, Shamkant B. Sistema de Banco de Dados. 2018.
-Pearson.
-- DATE, C. J. Introdução a Sistemas de Bancos de Dados. Rio de Janeiro: Elsevier,
-2003.
-- ELMASRI, R.; NAVATHE, S. B. Sistemas de Banco de Dados. São Paulo: Pearson
-Addison Wesley, 2011.
-<strong>Bibliografia Complementar:</strong>
-- Sadalage, P. J., &amp; Fowler, M. NoSQL distilled: a brief guide to the emerging world
-of polyglot persistence. 2013. Pearson Education.
-- Date, C. J. An introduction to database systems. 1981. Pearson Education India.
-- Neeraj, N. (2013). Mastering Apache Cassandra. Packt Publishing Ltd.
-- Banker, K. (2011). MongoDB in action. Manning Publications Co.</p>
+<h1 id="fila-e-pilha">Fila e Pilha<a class="headerlink" href="#fila-e-pilha" title="Permanent link">&para;</a></h1>
+<p>Tanto fila como pílha são estrutura de dados <strong>lineares</strong>, ou seja, possuem ligação com um único antecedente e com um único sucessor, desse modo:</p>
+<p><img alt="image" src="https://user-images.githubusercontent.com/72423464/184858945-0722a600-5a37-472c-990b-aadb75c7cc33.png" /></p>
+<h2 id="pilha-ou-stack">Pilha ou Stack<a class="headerlink" href="#pilha-ou-stack" title="Permanent link">&para;</a></h2>
+<p>Uma pilha é uma estrutura linear na qual <strong>inserções e remoções ocorrem no topo da pilha</strong>.</p>
+<p><strong>Características:</strong>
+- O último elemento a entrar tem que ser o primeiro a sair.
+- O primeiro elemento a entrar na estrutura tem que ser o último a sair.
+- Inserções e remoções ocorrem no topo;</p>
+<p><div
+     style="width:100px;height:100px;">
+
+![pilha](https://user-images.githubusercontent.com/72423464/184860157-8d7d21d5-ed30-4cb3-8676-f41106b7b178.gif)
+
+</div>
+</p>
+<p><strong>Principais Funções:</strong>
+- <code>isEmpty()</code> : chamada para verificar se a pilha está vazia.
+- <code>isFull()</code> : chamada para verificar se a estrutura está completa (quando possui tamanho fixo).
+- <code>push()</code> :  inserção de elementos no topo da pilha.
+- <code>pop()</code> : remoção do elemento que está no opo da pilha.</p>
 
 
 
@@ -910,42 +914,6 @@ of polyglot persistence. 2013. Pearson Education.
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
-      
-        
-        <a href="../../algoritmos_e_programa%C3%A7%C3%A3o/arquivos/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Manipulando arquivos" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Anterior
-              </span>
-              Manipulando arquivos
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../../estrutura_dados/est/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Dados" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Próximo
-              </span>
-              Dados
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
