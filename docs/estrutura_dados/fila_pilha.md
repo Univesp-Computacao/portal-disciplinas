@@ -36,7 +36,7 @@ Numa pilha, a manipulação dos elementos é realizada em apenas uma das extremi
 ## Fila (vetorial)
 Uma fila (ou _queue_) é uma estrutura linear na qual as **inserções ocorrem no final** e as **exclusões ocorrem no início**.
 
-Todas as operações em uma fila podem ser imaginadas como as que ocorre numa fila de pessoas num banco, exceto que o elementos não se movem na fila, conforme o primeiro elemento é retirado. Isto seria muito custoso para o computador. O que se faz na realidade é indicar quem é o primeiro.
+Todas as operações em uma fila podem ser imaginadas como as que ocorre numa fila de pessoas num banco, exceto que os elementos não se movem na fila, conforme o primeiro elemento é retirado. Isto seria muito custoso para o computador. O que se faz na realidade é indicar quem é o primeiro.
 
 **Caracterísiticas**
 
