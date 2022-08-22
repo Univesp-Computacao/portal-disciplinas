@@ -126,7 +126,8 @@ nav:
     - Dados: estrutura_dados/est.md
     - Conceitos Básicos C++: estrutura_dados/conceitosbasicos.md
     - Ponteiro: estrutura_dados/pointer.md
-    - Fila e Pilha: estrutura_dados/fila_pilha.md
+    - Fila e Pilha - conceitos: estrutura_dados/fila_pilha.md
+    - Lista Ligada: estrutura_dados/lista-ligada.md
   - Fundamentos Web:
     - Ementa: fundamentos_web/fund.md
     - Fundamentos HTML: fundamentos_web/html-basico.md
