@@ -123,7 +123,7 @@ nav:
   - Banco de Dados:
     - inicio: banco_de_dados/ini.md
   - Estrutura de Dados:
-    - Dados: estrutura_dados/est.md
+    - Ementa: estrutura_dados/est.md
     - Conceitos Básicos C++: estrutura_dados/conceitosbasicos.md
     - Ponteiro: estrutura_dados/pointer.md
     - Fila e Pilha - conceitos: estrutura_dados/fila_pilha.md
