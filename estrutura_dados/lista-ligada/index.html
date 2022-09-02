@@ -671,18 +671,38 @@
     Definição
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Definição">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#vantagens" class="md-nav__link">
     Vantagens:
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#desvantagens" class="md-nav__link">
     Desvantagens:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementacao-de-pilha" class="md-nav__link">
+    Implementação de Pilha
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alguns-detalhes-da-implmentacao" class="md-nav__link">
+    Alguns detalhes da implmentação
   </a>
   
 </li>
@@ -953,18 +973,38 @@
     Definição
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Definição">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#vantagens" class="md-nav__link">
     Vantagens:
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#desvantagens" class="md-nav__link">
     Desvantagens:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementacao-de-pilha" class="md-nav__link">
+    Implementação de Pilha
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alguns-detalhes-da-implmentacao" class="md-nav__link">
+    Alguns detalhes da implmentação
   </a>
   
 </li>
@@ -990,37 +1030,152 @@
 estes elementos estão espalhados na memória.</p>
 <p>Cada elemento precisa indicar em que endereço o seu sucessor pode ser encontrado de modo a manter a ordem lógica.</p>
 <p>Isso é feito através de um ponteiro.</p>
-<h2 id="vantagens">Vantagens:<a class="headerlink" href="#vantagens" title="Permanent link">&para;</a></h2>
+<h3 id="vantagens">Vantagens:<a class="headerlink" href="#vantagens" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Maior controle na inserção e remoção de elementos.</li>
 <li>Número de elementos pode aumentar ou diminuir durante a execução do programa.</li>
 <li>A manutenção da ordem lógica não exigirá deslocamentos de elementos.</li>
 </ul>
-<h2 id="desvantagens">Desvantagens:<a class="headerlink" href="#desvantagens" title="Permanent link">&para;</a></h2>
+<h3 id="desvantagens">Desvantagens:<a class="headerlink" href="#desvantagens" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Retira o acesso em <strong>tempo constante</strong> a qualquer elemento, dado o índice do elemento.</li>
 <li>Precisa percorrer todos os elementos predecessores, um por um.</li>
 <li>A busca binária deixa de fazer sentido.</li>
 </ul>
-<h1 id="implementacao-de-pilha-com-lista-encadeadalinked-list">Implementação de Pilha com lista Encadeada(<em>Linked List</em>).<a class="headerlink" href="#implementacao-de-pilha-com-lista-encadeadalinked-list" title="Permanent link">&para;</a></h1>
-<h2 id="estrutura-do-projeto">Estrutura do projeto<a class="headerlink" href="#estrutura-do-projeto" title="Permanent link">&para;</a></h2>
+<h2 id="implementacao-de-pilha">Implementação de Pilha<a class="headerlink" href="#implementacao-de-pilha" title="Permanent link">&para;</a></h2>
+<p>Segue abaixo a estrutura do código implementado na videoaula 08.
+Esta estrutura de dados está programada para guardar apenas dados do tipo <code>char</code>, mas é possível mudar isso sem precisar alterar muito o código.</p>
 <p>|
-|__pilha.h <br>
-|__pilha.cpp <br>
-|__main.cpp <br></p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">pilha.h</label><label for="__tabbed_1_2">pilha.cpp</label><label for="__tabbed_1_3">main.cpp</label></div>
+|__stack.h <br>
+|__node_type.h <br>
+|__stack_alinhamento.cpp <br>
+|__stack_encadeado.cpp <br></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">node_type.h</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">typedef</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">ItemType</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="cm">/*</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="cm"> Estrutura usada para guardar </span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="cm"> a informação e o endereço do </span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="cm"> próximo elemento.</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="cm">*/</span><span class="w"></span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="k">struct</span><span class="w"> </span><span class="nc">NodeType</span><span class="w"></span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="n">ItemType</span><span class="w"> </span><span class="n">info</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="n">NodeType</span><span class="o">*</span><span class="w"> </span><span class="n">next</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">};</span><span class="w"></span>
+</code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">stack.h</label><label for="__tabbed_2_2">stack_alinhamento.cpp</label><label for="__tabbed_2_3">stack_encadeado.cpp</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p><code>cpp
-    codigo</code></p>
+<p>```cpp
+    #include "node_type.h"</p>
+<div class="highlight"><pre><span></span><code>class Stack {
+   public:
+     Stack();  // Construtor       
+     ~Stack(); // Destrutor
+     bool isEmpty() const;
+     bool isFull() const;
+     void print() const;
+
+     void push(ItemType);
+     ItemType pop();
+
+   private:
+    NodeType* structure;
+  };
+</code></pre></div>
+<p>```</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="w">    </span><span class="cp">#include &quot;&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="w">      </span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;stack.h&quot;</span><span class="cp"></span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">      </span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">      </span><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">      </span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">        </span><span class="n">ItemType</span><span class="w"> </span><span class="n">character</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">        </span><span class="n">Stack</span><span class="w"> </span><span class="n">stack</span><span class="p">;</span><span class="w">  </span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">        </span><span class="n">ItemType</span><span class="w"> </span><span class="n">stackItem</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Insira uma string.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">        </span><span class="n">cin</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">character</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">        </span><span class="kt">bool</span><span class="w"> </span><span class="n">isMatched</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w">  </span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">        </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">isMatched</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">character</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="sc">&#39;\n&#39;</span><span class="p">)</span><span class="w"></span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">          </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">character</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;{&#39;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">character</span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;(&#39;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">character</span><span class="o">==</span><span class="w">  </span><span class="sc">&#39;[&#39;</span><span class="p">){</span><span class="w">  </span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">           </span><span class="n">stack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">character</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">            </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">character</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;}&#39;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">character</span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;)&#39;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">character</span><span class="o">==</span><span class="w">  </span><span class="sc">&#39;]&#39;</span><span class="p">){</span><span class="w">    </span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">           </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">stack</span><span class="p">.</span><span class="n">isEmpty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">             </span><span class="n">isMatched</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">           </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">             </span><span class="n">stackItem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">stack</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span><span class="w"></span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">             </span><span class="n">isMatched</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="w">                       </span><span class="p">(</span><span class="n">character</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;}&#39;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">stackItem</span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;{&#39;</span><span class="p">)</span><span class="w"></span>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="w">                       </span><span class="o">||</span><span class="w"> </span><span class="p">(</span><span class="n">character</span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;)&#39;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">stackItem</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;(&#39;</span><span class="p">)</span><span class="w"></span>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="w">                       </span><span class="o">||</span><span class="w"> </span><span class="p">(</span><span class="n">character</span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;]&#39;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">stackItem</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;[&#39;</span><span class="p">)</span><span class="w"></span>
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="w">                       </span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="w">           </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="w">            </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="w">            </span><span class="n">cin</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">character</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="w">          </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>
+<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>
+<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">isMatched</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">stack</span><span class="p">.</span><span class="n">isEmpty</span><span class="p">()</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a><span class="w">          </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Bem formada </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a><span class="w">          </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Mal formada </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a><span class="w">        </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a><span class="w">      </span><span class="p">}</span><span class="w">    </span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<p><code>cpp
-    #include ""</code></p>
+<p>```cpp
+      #include "stack.h"
+      #include <iostream></p>
+<div class="highlight"><pre><span></span><code>  using namespace std;
+
+  int main() {
+    ItemType character;
+    Stack stack;  
+    ItemType stackItem;
+
+    cout &lt;&lt; &quot;Insira uma string.&quot; &lt;&lt; endl;
+    cin.get(character);
+
+    bool isMatched = true;  
+    while (isMatched &amp;&amp; character != &#39;\n&#39;)
+      {
+        if (character == &#39;{&#39; || character== &#39;(&#39; || character==  &#39;[&#39;){  
+       stack.push(character);
+        }
+        if(character == &#39;}&#39; || character== &#39;)&#39; || character==  &#39;]&#39;){    
+       if (stack.isEmpty()) {
+         isMatched = false;
+       } else {
+         stackItem = stack.pop();
+         isMatched = (
+                   (character == &#39;}&#39; &amp;&amp; stackItem== &#39;{&#39;)
+                   || (character== &#39;)&#39; &amp;&amp; stackItem == &#39;(&#39;)
+                   || (character== &#39;]&#39; &amp;&amp; stackItem == &#39;[&#39;)
+                   );
+       }
+        }
+        cin.get(character);
+      }
+
+    if (isMatched &amp;&amp; stack.isEmpty() ) {
+      cout &lt;&lt; &quot;Bem formada \n&quot;;
+    } else {
+      cout &lt;&lt; &quot;Mal formada \n&quot;;
+    }
+  }
+</code></pre></div>
+<p>```</p>
 </div>
 </div>
 </div>
@@ -1028,16 +1183,15 @@ estes elementos estão espalhados na memória.</p>
 <ul>
 <li><code>typedef</code> é usado para definir previamente o tipo de uma variável.</li>
 <li><code>private</code> and <code>public</code> são níveis de configuração/permissão dentro de uma classe.</li>
+<li><code>struct</code> parecido com clase, porém, toda a interface é pública.</li>
+<li><code>try</code> e <code>catch</code> [...]</li>
 </ul>
-<h2 id="entendendo-a-funcao-main-da-pilha">Entendendo a função <strong>main()</strong> da Pilha<a class="headerlink" href="#entendendo-a-funcao-main-da-pilha" title="Permanent link">&para;</a></h2>
-<p>Problema: Como buscar um elemento usando busca binária? 
-??? note "Espiar a resposta" A busca binária é um algoritmo de busca de um elemento em vetores que segue o
-paradigma de <strong>divisão e conquista</strong>. </p>
 <hr />
 <h1 id="referencias-deste-trabalho">Referências deste trabalho<a class="headerlink" href="#referencias-deste-trabalho" title="Permanent link">&para;</a></h1>
 <ul>
-<li><a href="[url](https://www.youtube.com/watch?v=84wIYtNUKEg&amp;list=PLrOyM49ctTx_AMgNGQaic10qQJpTpXfn_&amp;index=6)">Prof. Douglas Maioli - Aula 05 Estrutura de Dados - Lista Encadeada</a></li>
-<li>[Prof. Douglas Maioli - Aula 06 - Estrutura de Dados - Lista Encadeada]</li>
+<li><a href="[url](https://www.youtube.com/watch?v=84wIYtNUKEg)">Prof. Douglas Maioli - Aula 05 Estrutura de Dados - Lista Encadeada</a></li>
+<li><a href="[url](https://www.youtube.com/watch?v=zu0Xw5gPft0&amp;t=892s)">Prof. Douglas Maioli - Aula 06 - Estrutura de Dados - Lista Encadeada</a></li>
+<li>[Autor UNIVESP -  Estruturas de Dados - Pilha (lista Encadeada)](<a href="https://www.youtube.com/watch?v=Xlkh6-10ILw">url</a></li>
 </ul>
 
 
