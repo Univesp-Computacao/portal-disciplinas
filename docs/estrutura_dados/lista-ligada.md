@@ -27,7 +27,7 @@ Isso é feito através de um ponteiro.
 Segue abaixo a estrutura do código implementado na videoaula 08.
 Esta estrutura de dados está programada para guardar apenas dados do tipo ```char```, mas é possível mudar isso sem precisar alterar muito o código.
 
-|
+| <br>
 |__stack.h <br>
 |__node_type.h <br>
 |__stack_alinhamento.cpp <br>
@@ -50,126 +50,124 @@ struct NodeType
 
 
 ```
+
 === "stack.h"
 
-     ```cpp
-        #include "node_type.h"
+```cpp
+#include "node_type.h"
+class Stack {
+public:
+Stack();  // Construtor       
+~Stack(); // Destrutor
+bool isEmpty() const;
+bool isFull() const;
+void print() const;
 
-        class Stack {
-           public:
-             Stack();  // Construtor       
-             ~Stack(); // Destrutor
-             bool isEmpty() const;
-             bool isFull() const;
-             void print() const;
-            
-             void push(ItemType);
-             ItemType pop();  
-            
-            
-           private:
-            NodeType* structure;
-          };
+void push(ItemType);
+ItemType pop();  
+
+
+private:
+NodeType* structure;
+};
         
     ```
    
 === "stack_alinhamento.cpp"
 
-   
+```cpp
 
-    ```cpp
+#include "stack.h"
+#include <iostream>
 
-          #include "stack.h"
-          #include <iostream>
+using namespace std;
 
-          using namespace std;
+int main() {
+ItemType character;
+Stack stack;  
+ItemType stackItem;
 
-          int main() {
-            ItemType character;
-            Stack stack;  
-            ItemType stackItem;
+cout << "Insira uma string." << endl;
+cin.get(character);
 
-            cout << "Insira uma string." << endl;
-            cin.get(character);
-
-            bool isMatched = true;  
-            while (isMatched && character != '\n')
-              {
-                if (character == '{' || character== '(' || character==  '['){  
-               stack.push(character);
-                }
-                if(character == '}' || character== ')' || character==  ']'){    
-               if (stack.isEmpty()) {
-                 isMatched = false;
-               } else {
-                 stackItem = stack.pop();
-                 isMatched = (
-                           (character == '}' && stackItem== '{')
-                           || (character== ')' && stackItem == '(')
-                           || (character== ']' && stackItem == '[')
-                           );
-               }
-                }
-                cin.get(character);
-              }
+bool isMatched = true;  
+while (isMatched && character != '\n')
+{
+  if (character == '{' || character== '(' || character==  '['){  
+ stack.push(character);
+  }
+  if(character == '}' || character== ')' || character==  ']'){    
+ if (stack.isEmpty()) {
+   isMatched = false;
+ } else {
+   stackItem = stack.pop();
+   isMatched = (
+             (character == '}' && stackItem== '{')
+             || (character== ')' && stackItem == '(')
+             || (character== ']' && stackItem == '[')
+             );
+ }
+  }
+  cin.get(character);
+}
 
 
-            if (isMatched && stack.isEmpty() ) {
-              cout << "Bem formada \n";
-            } else {
-              cout << "Mal formada \n";
-            }
-          }    
-        
-    ```
+if (isMatched && stack.isEmpty() ) {
+cout << "Bem formada \n";
+} else {
+cout << "Mal formada \n";
+}
+}    
+
+```
 
 === "stack_encadeado.cpp"
 
-     ```cpp
-          #include "stack.h"
-          #include <iostream>
+```cpp
+#include "stack.h"
+#include <iostream>
 
-          using namespace std;
+using namespace std;
 
-          int main() {
-            ItemType character;
-            Stack stack;  
-            ItemType stackItem;
+int main() {
+ItemType character;
+Stack stack;  
+ItemType stackItem;
 
-            cout << "Insira uma string." << endl;
-            cin.get(character);
+cout << "Insira uma string." << endl;
+cin.get(character);
 
-            bool isMatched = true;  
-            while (isMatched && character != '\n')
-              {
-                if (character == '{' || character== '(' || character==  '['){  
-               stack.push(character);
-                }
-                if(character == '}' || character== ')' || character==  ']'){    
-               if (stack.isEmpty()) {
-                 isMatched = false;
-               } else {
-                 stackItem = stack.pop();
-                 isMatched = (
-                           (character == '}' && stackItem== '{')
-                           || (character== ')' && stackItem == '(')
-                           || (character== ']' && stackItem == '[')
-                           );
-               }
-                }
-                cin.get(character);
-              }
-
-
-            if (isMatched && stack.isEmpty() ) {
-              cout << "Bem formada \n";
-            } else {
-              cout << "Mal formada \n";
-            }
-          }
+bool isMatched = true;  
+while (isMatched && character != '\n')
+{
+if (character == '{' || character== '(' || character==  '['){  
+stack.push(character);
+}
+if(character == '}' || character== ')' || character==  ']'){    
+if (stack.isEmpty()) {
+ isMatched = false;
+} else {
+ stackItem = stack.pop();
+ isMatched = (
+           (character == '}' && stackItem== '{')
+           || (character== ')' && stackItem == '(')
+           || (character== ']' && stackItem == '[')
+           );
+}
+}
+cin.get(character);
+}
 
 
-    ```
+if (isMatched && stack.isEmpty() ) {
+cout << "Bem formada \n";
+} else {
+cout << "Mal formada \n";
+}
+}
+
+
+```
     
 ## Alguns detalhes da implmentação
 
