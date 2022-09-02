@@ -669,9 +669,54 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Lista Ligada
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Lista Ligada
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definicao" class="md-nav__link">
+    Definição
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vantagens" class="md-nav__link">
+    Vantagens:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#desvantagens" class="md-nav__link">
+    Desvantagens:
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -924,6 +969,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definicao" class="md-nav__link">
+    Definição
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vantagens" class="md-nav__link">
+    Vantagens:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#desvantagens" class="md-nav__link">
+    Desvantagens:
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -937,16 +1011,47 @@
 
 
 <h1 id="listas-ligadas">Listas Ligadas<a class="headerlink" href="#listas-ligadas" title="Permanent link">&para;</a></h1>
+<h2 id="definicao">Definição<a class="headerlink" href="#definicao" title="Permanent link">&para;</a></h2>
 <p>Uma lista ligada é uma lista linear que a ordem lógica dos elementos <strong>não</strong> é a mesma da ordem física.</p>
-<p>Os elementos estão espalhados na memória.</p>
+<p>Os elementos estão em sequência, ou seja, tem exatamente um <strong>sucessor</strong> e um <strong>predecessor</strong>, porém, 
+estes elementos estão espalhados na memória.</p>
 <p>Cada elemento precisa indicar em que endereço o seu sucessor pode ser encontrado de modo a manter a ordem lógica.</p>
-<p>Desvantagens:
-- Retira o acesso em tempo constante a qualquer elemento, dado o índice do elemento.
-- Precisa percorrer todos os elementos predecessores, um por um.
-- A busca binária deixa de fazer sentido.</p>
-<p>Vantagens:
-- Número de elementos pode aumentar ou diminuir durante a execução do programa.
-- A manutenção da ordem lógica não exigirá deslocamentos de elementos.</p>
+<p>Isso é feito através de um ponteiro.</p>
+<h2 id="vantagens">Vantagens:<a class="headerlink" href="#vantagens" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Número de elementos pode aumentar ou diminuir durante a execução do programa.</li>
+<li>A manutenção da ordem lógica não exigirá deslocamentos de elementos.</li>
+</ul>
+<h2 id="desvantagens">Desvantagens:<a class="headerlink" href="#desvantagens" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Retira o acesso em tempo constante a qualquer elemento, dado o índice do elemento.</li>
+<li>Precisa percorrer todos os elementos predecessores, um por um.</li>
+<li>A busca binária deixa de fazer sentido.</li>
+</ul>
+<h1 id="implementacao-de-fila-com-lista-ligada">Implementação de Fila com lista ligada.<a class="headerlink" href="#implementacao-de-fila-com-lista-ligada" title="Permanent link">&para;</a></h1>
+<h2 id="estrutura-do-projeto">Estrutura do projeto<a class="headerlink" href="#estrutura-do-projeto" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">fila.h</label><label for="__tabbed_1_2">fila.cpp</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Arquivo que contém as classes do algoritmo.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Arquivo que detalha as funções usadas na classe.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="w">    </span><span class="cp">#include &quot;&quot;</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<p>=== "main_fila.cpp</p>
+<div class="highlight"><pre><span></span><code>- Contém a função principal, responsável por iniciar o programa.
+</code></pre></div>
+<hr />
+<h2 id="referencias">Referências<a class="headerlink" href="#referencias" title="Permanent link">&para;</a></h2>
+<p><a href="https://www.youtube.com/watch?v=84wIYtNUKEg&amp;list=PLrOyM49ctTx_AMgNGQaic10qQJpTpXfn_&amp;index=6">https://www.youtube.com/watch?v=84wIYtNUKEg&amp;list=PLrOyM49ctTx_AMgNGQaic10qQJpTpXfn_&amp;index=6</a></p>
 
 
 
