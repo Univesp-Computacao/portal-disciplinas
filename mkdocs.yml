@@ -114,7 +114,6 @@ extra:
 # tree da pagina
 nav:
   - Inicio: index.md
-    - Sobre: /sobre.md
   - Algoritmo e Programação:
     - Ementa: algoritmos_e_programação/algo.md
     - Perguntas e Respostas: algoritmos_e_programação/perguntas-e-respostas-python.md
