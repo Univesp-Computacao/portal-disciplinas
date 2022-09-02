@@ -213,7 +213,8 @@ O código abaixo foi implementado na [videoaula 08](https://www.youtube.com/watc
 - O arquivo "stack_encadeamento.cpp" contém a **main()**, que chama de modo ordenado todas as demais funções.
 
 ## Exemplo de Saída
-![](.lista-ligada_images/30425047.png)
+![image](https://user-images.githubusercontent.com/72423464/188241675-9ad2428a-b5ce-4426-a1c9-eb682ab773e1.png)
+
 
 ---
 # Referências 
