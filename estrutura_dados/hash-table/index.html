@@ -711,16 +711,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#funcao-de-dispersao" class="md-nav__link">
-    Função de Dispersão
+  <a href="#funcao-de-dispersao-hash-functions" class="md-nav__link">
+    Função de Dispersão / Hash Functions
   </a>
   
-    <nav class="md-nav" aria-label="Função de Dispersão">
+    <nav class="md-nav" aria-label="Função de Dispersão / Hash Functions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#transformacao-alfa-numerica" class="md-nav__link">
-    Transformação alfa-numérica
+    Transformação Alfa-numérica
   </a>
   
 </li>
@@ -731,8 +731,42 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#colisoes" class="md-nav__link">
-    Colisões
+  <a href="#tratamento-de-colisoes" class="md-nav__link">
+    Tratamento de Colisões
+  </a>
+  
+    <nav class="md-nav" aria-label="Tratamento de Colisões">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#encadeamento-separado" class="md-nav__link">
+    Encadeamento Separado
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teste-linear" class="md-nav__link">
+    Teste Linear
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fator-de-carga" class="md-nav__link">
+    Fator de Carga
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aplicacoes-da-tabela-hash" class="md-nav__link">
+    Aplicações da Tabela Hash
   </a>
   
 </li>
@@ -1027,16 +1061,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#funcao-de-dispersao" class="md-nav__link">
-    Função de Dispersão
+  <a href="#funcao-de-dispersao-hash-functions" class="md-nav__link">
+    Função de Dispersão / Hash Functions
   </a>
   
-    <nav class="md-nav" aria-label="Função de Dispersão">
+    <nav class="md-nav" aria-label="Função de Dispersão / Hash Functions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#transformacao-alfa-numerica" class="md-nav__link">
-    Transformação alfa-numérica
+    Transformação Alfa-numérica
   </a>
   
 </li>
@@ -1047,8 +1081,42 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#colisoes" class="md-nav__link">
-    Colisões
+  <a href="#tratamento-de-colisoes" class="md-nav__link">
+    Tratamento de Colisões
+  </a>
+  
+    <nav class="md-nav" aria-label="Tratamento de Colisões">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#encadeamento-separado" class="md-nav__link">
+    Encadeamento Separado
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teste-linear" class="md-nav__link">
+    Teste Linear
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fator-de-carga" class="md-nav__link">
+    Fator de Carga
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aplicacoes-da-tabela-hash" class="md-nav__link">
+    Aplicações da Tabela Hash
   </a>
   
 </li>
@@ -1069,10 +1137,11 @@
 
 <h1 id="tabela-hash">Tabela Hash<a class="headerlink" href="#tabela-hash" title="Permanent link">&para;</a></h1>
 <h2 id="definicao">Definição<a class="headerlink" href="#definicao" title="Permanent link">&para;</a></h2>
-<p>Também conhecida como <strong>tabela de dispersão</strong> ou <strong>tabela de espalhamento</strong> é uma estrutura de dados que associa chaves e valores. Em outras linguagens de programação pode ser referida como: dicionários, arrays associativos, mapas, entre outros.</p>
+<p>Também conhecida como <strong>tabela de dispersão</strong>, <strong>tabela de espalhamento</strong> ou <strong>tabela de indexação</strong> é uma estrutura de dados que associa chaves e valores. </p>
+<p>Em outras linguagens de programação pode ser referida como: dicionários, arrays associativos, mapas, entre outros.</p>
 <p>A forma mais simples de se pensar em uma tabela hash é como um vetor de registros.</p>
 <h2 id="visualizacao">Visualização<a class="headerlink" href="#visualizacao" title="Permanent link">&para;</a></h2>
-<p><img alt="hash-table" src="https://user-images.githubusercontent.com/72423464/188905735-a5572714-0d85-4ada-9c12-4661fe17d562.gif" /></p>
+<p><img alt="hash-table" src="https://user-images.githubusercontent.com/72423464/188959969-e626ebe8-0bce-40bd-9a03-ab00303133aa.gif" /></p>
 <h2 id="caracteristicas">Características<a class="headerlink" href="#caracteristicas" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Tabelas hash armazenam uma coleção de registros com chaves;</li>
@@ -1081,7 +1150,7 @@
 <li>O local de um novo registro depende do valor hash de sua chave;</li>
 <li>Quando ocorre uma colisão, é usado o próximo local disponível;</li>
 <li>É possível encadear os valores em um índice usando listas ligadas;</li>
-<li>Quando deletamos um registro, o espaço vazio ganha uma conotação especial.</li>
+<li>Quando removemos um registro, o local deve ser marcado para facilitar as buscas.</li>
 </ul>
 <h2 id="inserindo-novo-registro">Inserindo novo registro<a class="headerlink" href="#inserindo-novo-registro" title="Permanent link">&para;</a></h2>
 <p>Supondo que estamos implementando uma tabela hash de tamanho <strong>11</strong> indexado de <strong>0 a 10</strong>. </p>
@@ -1092,8 +1161,8 @@
 <p>Se utilizarmos o <strong>Método da Divisão</strong> teremos que encontrar o resto da divisão do valor da chave pelo tamanho da tabela.</p>
 <p>Por exemplo, se temos uma chave de <strong>valor 15</strong> ela será inserida no <strong>índice 4</strong>, pois <code>15 % 11 = 4</code></p>
 <p><img alt="image" src="https://user-images.githubusercontent.com/72423464/188945769-6eb289cd-9296-4f6f-9d4a-d7564a0c79a9.png" /></p>
-<h2 id="funcao-de-dispersao">Função de Dispersão<a class="headerlink" href="#funcao-de-dispersao" title="Permanent link">&para;</a></h2>
-<p>Uma função de dispersão deve satisfazer as seguintes condições: </p>
+<h2 id="funcao-de-dispersao-hash-functions">Função de Dispersão / <em>Hash Functions</em><a class="headerlink" href="#funcao-de-dispersao-hash-functions" title="Permanent link">&para;</a></h2>
+<p>Uma função de dispersão é utilizada para espalhar os elementos que queremos armazenar e deve satisfazer as seguintes condições: </p>
 <ul>
 <li>produzir um número baixo de colisões;</li>
 <li>ser facilmente computável;</li>
@@ -1107,10 +1176,10 @@ Existem alguns critérios em relação ao tamanho da tabela que ajudam a obter r
 <li>Deve ser, de preferência, um número primo.</li>
 </ul>
 <p>Além do Método da Divisão, podemos usar o <strong>Método da Dobra</strong> e o <strong>Método da Multiplicação</strong> .</p>
-<h3 id="transformacao-alfa-numerica">Transformação alfa-numérica<a class="headerlink" href="#transformacao-alfa-numerica" title="Permanent link">&para;</a></h3>
+<h3 id="transformacao-alfa-numerica">Transformação Alfa-numérica<a class="headerlink" href="#transformacao-alfa-numerica" title="Permanent link">&para;</a></h3>
 <p>Também temos casos em que as chaves não são valores numéricos, como o nome de pessoas.
 A solução para isso é transformar o texto em número, já que, do ponto de vista do computador, <strong>todos os dados são representações numéricas</strong>.</p>
-<p>Como na tabela ASCII existe um inteiro associado a um caractere, podemos somar caractere por caractere para obter uma chave numérica. Se temos uma chave de valor "Fulano":</p>
+<p>Como na tabela ASCII existe um inteiro associado a um caractere, podemos somar caractere por caractere para obter uma chave numérica. Se temos uma chave de valor "Fulano", teremos após a função, uma chave de valor 613.</p>
 <table>
 <thead>
 <tr>
@@ -1149,16 +1218,38 @@ A solução para isso é transformar o texto em número, já que, do ponto de vi
 </tr>
 </tbody>
 </table>
-<p>O valor numérico para a chave "Fulano" seria 613.</p>
-<h2 id="colisoes">Colisões<a class="headerlink" href="#colisoes" title="Permanent link">&para;</a></h2>
+<h2 id="tratamento-de-colisoes">Tratamento de Colisões<a class="headerlink" href="#tratamento-de-colisoes" title="Permanent link">&para;</a></h2>
 <p>As colisões ocorrem quando chaves diferentes são mapeadas para o mesmo endereço de memória, o que pode causar ambiguidades sobre o registro que deverá ocupar aquele endereço de memória.</p>
-<p>🚧 🚧 🚧</p>
+<p>Para resolver colisões, podemos utilizar tanto um espaço de memória adicional quanto um espaço no próprio arranjo.</p>
+<h3 id="encadeamento-separado">Encadeamento Separado<a class="headerlink" href="#encadeamento-separado" title="Permanent link">&para;</a></h3>
+<p>Também conhecido como encadeamento exterior, ou em inglês como <em>separate chaining</em>.</p>
+<p>Cada célula da tabela hash seria na verdade um ponteiro para uma lista encadeada, com isso as colisões são mantidas em uma estrutura de dados separada.  </p>
+<h3 id="teste-linear">Teste Linear<a class="headerlink" href="#teste-linear" title="Permanent link">&para;</a></h3>
+<p>Também conhecido como sondagem linear ou em inglês, como <em>linear probing</em>, <em>open adressing</em> ou <em>rehash</em> .</p>
+<p>Quando ocorre uma colisão, percorre-se a tabela hash buscando por uma posição ainda não ocupada.</p>
+<p>As colisões serão tratadas sem alocação de memória adicional, ou seja, todos os elementos estão armazenados na própria tabela hash.</p>
+<h3 id="fator-de-carga">Fator de Carga<a class="headerlink" href="#fator-de-carga" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fator de carga é a divisão dos números ocupados em uma tabela pelo tamanho total da tabela.</li>
+<li>Quanto maior o fator de carga, mais lento é o processo de recuperação. </li>
+<li>No encadeamento separado, o fator de carga assume valor maior que 1.</li>
+<li>No encadeamento aberto, o fator de carga assume valor entre 0 e 1.</li>
+</ul>
+<h2 id="aplicacoes-da-tabela-hash">Aplicações da Tabela Hash<a class="headerlink" href="#aplicacoes-da-tabela-hash" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Busca de elementos em base de dados.</li>
+<li>Verificação de integridade de dados e autenticação de mensagens. </li>
+<li>Armazenamento de senhas com segurança.</li>
+<li>Criptografia (MD5 e SHA).</li>
+</ul>
 <hr />
 <h1 id="referencias">Referências<a class="headerlink" href="#referencias" title="Permanent link">&para;</a></h1>
 <ul>
 <li><a href="[url](https://docente.ifrn.edu.br/camilataumaturgo/disciplinas/2014.2/estruturas-de-dados/tabela-hash)">IFRN - Estrutura de Dados- Profa. Camila Taumaturgo</a></li>
 <li><a href="[url](https://dcm.ffclrp.usp.br/~augusto/teaching/icii/Hash-Tables-Apresentacao.pdf)">USP - Hash Table - Apresentação</a></li>
 <li><a href="[url](https://junminlee3.medium.com/hash-tables-animations-that-will-make-you-understand-how-they-work-d1bcc850ba71)">Medium - Jamin Lee - Has Table Animations</a></li>
+<li><a href="[url](https://www.ime.usp.br/~pf/estruturas-de-dados/aulas/st-hash.html)">IME - USP - Hashing</a></li>
+<li><a href="[url](https://acervolima.com/hashing-conjunto-2-encadeamento-separado/)">Acervo Lima - Encadeamento Separado</a> </li>
 </ul>
 
 
