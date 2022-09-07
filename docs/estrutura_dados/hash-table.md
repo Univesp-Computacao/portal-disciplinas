@@ -1,14 +1,17 @@
 # Tabela Hash
 
 ## Definição
-Também conhecida como **tabela de dispersão** ou **tabela de espalhamento** é uma estrutura de dados que associa chaves e valores. Em outras linguagens de programação pode ser referida como: dicionários, arrays associativos, mapas, entre outros.
+Também conhecida como **tabela de dispersão**, **tabela de espalhamento** ou **tabela de indexação** é uma estrutura de dados que associa chaves e valores. 
+
+Em outras linguagens de programação pode ser referida como: dicionários, arrays associativos, mapas, entre outros.
 
 A forma mais simples de se pensar em uma tabela hash é como um vetor de registros.
 
 
 ## Visualização 
 
-![hash-table](https://user-images.githubusercontent.com/72423464/188905735-a5572714-0d85-4ada-9c12-4661fe17d562.gif)
+![hash-table](https://user-images.githubusercontent.com/72423464/188959969-e626ebe8-0bce-40bd-9a03-ab00303133aa.gif)
+
 
 ## Características
 
@@ -18,7 +21,7 @@ A forma mais simples de se pensar em uma tabela hash é como um vetor de registr
 - O local de um novo registro depende do valor hash de sua chave;
 - Quando ocorre uma colisão, é usado o próximo local disponível;
 - É possível encadear os valores em um índice usando listas ligadas;
-- Quando deletamos um registro, o espaço vazio ganha uma conotação especial.
+- Quando removemos um registro, o local deve ser marcado para facilitar as buscas.
 
 ## Inserindo novo registro
 
@@ -40,9 +43,11 @@ Por exemplo, se temos uma chave de **valor 15** ela será inserida no **índice 
 ![image](https://user-images.githubusercontent.com/72423464/188945769-6eb289cd-9296-4f6f-9d4a-d7564a0c79a9.png)
 
 
-## Função de Dispersão
+## Função de Dispersão / _Hash Functions_
 
-Uma função de dispersão deve satisfazer as seguintes condições: 
+
+
+Uma função de dispersão é utilizada para espalhar os elementos que queremos armazenar e deve satisfazer as seguintes condições: 
 
 - produzir um número baixo de colisões;
 - ser facilmente computável;
@@ -57,12 +62,12 @@ Existem alguns critérios em relação ao tamanho da tabela que ajudam a obter r
 
 Além do Método da Divisão, podemos usar o **Método da Dobra** e o **Método da Multiplicação** .
 
-### Transformação alfa-numérica
+### Transformação Alfa-numérica
 
 Também temos casos em que as chaves não são valores numéricos, como o nome de pessoas.
 A solução para isso é transformar o texto em número, já que, do ponto de vista do computador, **todos os dados são representações numéricas**.
 
-Como na tabela ASCII existe um inteiro associado a um caractere, podemos somar caractere por caractere para obter uma chave numérica. Se temos uma chave de valor "Fulano":
+Como na tabela ASCII existe um inteiro associado a um caractere, podemos somar caractere por caractere para obter uma chave numérica. Se temos uma chave de valor "Fulano", teremos após a função, uma chave de valor 613.
 
 | Caractere   | Inteiro            |
 | ------------- |:-------------:|
@@ -74,13 +79,46 @@ Como na tabela ASCII existe um inteiro associado a um caractere, podemos somar c
 | "o" | 111      |
 | **Soma:** |  **613**     |
 
-O valor numérico para a chave "Fulano" seria 613.
 
-## Colisões
+## Tratamento de Colisões
 
- As colisões ocorrem quando chaves diferentes são mapeadas para o mesmo endereço de memória, o que pode causar ambiguidades sobre o registro que deverá ocupar aquele endereço de memória.
+As colisões ocorrem quando chaves diferentes são mapeadas para o mesmo endereço de memória, o que pode causar ambiguidades sobre o registro que deverá ocupar aquele endereço de memória.
+
+Para resolver colisões, podemos utilizar tanto um espaço de memória adicional quanto um espaço no próprio arranjo.
+
+### Encadeamento Separado
+
+Também conhecido como encadeamento exterior, ou em inglês como _separate chaining_.
+
+Cada célula da tabela hash seria na verdade um ponteiro para uma lista encadeada, com isso as colisões são mantidas em uma estrutura de dados separada.  
+
+
+
+### Teste Linear
+
+Também conhecido como sondagem linear ou em inglês, como _linear probing_, _open adressing_ ou _rehash_ .
+
+Quando ocorre uma colisão, percorre-se a tabela hash buscando por uma posição ainda não ocupada.
+
+As colisões serão tratadas sem alocação de memória adicional, ou seja, todos os elementos estão armazenados na própria tabela hash.
+
+
+
+
+### Fator de Carga
+
+- Fator de carga é a divisão dos números ocupados em uma tabela pelo tamanho total da tabela.
+- Quanto maior o fator de carga, mais lento é o processo de recuperação. 
+- No encadeamento separado, o fator de carga assume valor maior que 1.
+- No encadeamento aberto, o fator de carga assume valor entre 0 e 1.
  
- 🚧 🚧 🚧
+## Aplicações da Tabela Hash
+
+- Busca de elementos em base de dados.
+- Verificação de integridade de dados e autenticação de mensagens. 
+- Armazenamento de senhas com segurança.
+- Criptografia (MD5 e SHA).
+
 
 ---
 
@@ -88,3 +126,5 @@ O valor numérico para a chave "Fulano" seria 613.
 - [IFRN - Estrutura de Dados- Profa. Camila Taumaturgo]([url](https://docente.ifrn.edu.br/camilataumaturgo/disciplinas/2014.2/estruturas-de-dados/tabela-hash))
 - [USP - Hash Table - Apresentação]([url](https://dcm.ffclrp.usp.br/~augusto/teaching/icii/Hash-Tables-Apresentacao.pdf))
 - [Medium - Jamin Lee - Has Table Animations]([url](https://junminlee3.medium.com/hash-tables-animations-that-will-make-you-understand-how-they-work-d1bcc850ba71))
+- [IME - USP - Hashing]([url](https://www.ime.usp.br/~pf/estruturas-de-dados/aulas/st-hash.html))
+- [Acervo Lima - Encadeamento Separado]([url](https://acervolima.com/hashing-conjunto-2-encadeamento-separado/)) 
