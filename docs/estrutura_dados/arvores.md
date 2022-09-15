@@ -54,17 +54,21 @@ Uma árvore binária é uma árvore ordenada, na qual cada nó tem **0**, **1**,
 #### Pré-ordem: 
 Partindo da raiz, visitamos a raiz e seguimos para os nós da esquerda e depois os da direita.
 
-![](../../../../../Videos/pre-ordem.gif)
+![pre-ordem](https://user-images.githubusercontent.com/72423464/190165044-ea032446-1047-4639-81d7-b7f7751470f8.gif)
+
 
 #### Pós-ordem: 
 Partindo da raiz, visitamos primeiro os nós da esquerda, depois os da direita e por fim, visitamos o nó raiz.
 
-![](../../../../../Videos/pos-ordem.gif)
+![pos-ordem](https://user-images.githubusercontent.com/72423464/190165085-192e93d0-28b3-4c34-aa8b-82ab04b0b377.gif)
+
+
 
 #### In-ordem: 
 Partindo da raiz, visitamos primeiro os nós da esquerda, depois visitamos o nó raiz, e depois visitamos os nós da direita. 
 
-![](../../../../../Videos/in-ordem.gif)
+![in-ordem](https://user-images.githubusercontent.com/72423464/190165118-0ec50680-28c1-436c-a072-14de4f960892.gif)
+
 
 
 ## Referências
