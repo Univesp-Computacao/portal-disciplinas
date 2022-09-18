@@ -1,4 +1,7 @@
-# NOSQL - Not Only SQL
+# NOSQL - Not Only SQL [em construção]
+
+
+
 
 NoSQL fornece um modelo de dados que se adapta
 melhor às necessidades da aplicação (modelagem mais

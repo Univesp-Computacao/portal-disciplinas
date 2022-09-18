@@ -1,4 +1,4 @@
-# Banco de Dados Relacional
+# Banco de Dados Relacional [em construção]
 O modelo de dados relacional foi introduzido por Edgar Codd em 1970 (IBM).
 
 É um modelo formal, baseado na teoria matemática das relações entre conjuntos.
