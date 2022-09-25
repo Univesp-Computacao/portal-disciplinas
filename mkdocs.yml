@@ -133,6 +133,7 @@ nav:
     - Lista Ligada: estrutura_dados/lista-ligada.md
     - Tabela Hash: estrutura_dados/hash-table.md
     - Árvores: estrutura_dados/arvores.md
+    - Árvore AVL: estrutura_dados/avltree.md
   - Fundamentos Web:
     - Ementa: fundamentos_web/fund.md
     - Fundamentos HTML: fundamentos_web/html-basico.md
