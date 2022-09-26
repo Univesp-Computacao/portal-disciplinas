@@ -16,23 +16,14 @@ Trazer para a programação os conceitos de objetos da vida real e a criação d
 
 Um objeto  é gerado a partir de um molde ou classe, seguindo os princípios do mundo real. Um objeto representa uma entidade que pode ser física, conceitual ou de software.
 
-Um objeto é uma entidade com fronteira e identidade bem definidas que encapsulam o estado e comportamento.
+Um objeto é uma entidade com fronteira e identidade bem definidas que encapsulam o **Estado** e **Comportamento**. O **Estado** se refere a  atributos e relacionamentos, enquanto o **comportamento** se refere a operações e métodos.
 
-Estado: atributos e relacionamentos.
-COmportamento: operações e métodos.
+### Quatro princípios da OOP
+- **Abstração**: extrair informações do mundo real para o mundo virtual.
+- **Encapsulamento**: criação de interface para o usuário final protegendo os mecanismos internos de funcionamento do objeto.
+- **Modularização**: reutillização e organização dos objetos.
+- **Hierarquia**: herança de variáveis e métodos de uma classe para outra.
 
-Quatro princípios da OOP:
-- Abstração: extrair informações do mundo real para o mundo virtual.
-- Encapsulamento: criação de interface para o usuário final protegendo os mecanismos internos de funcionamento do objeto.
-- Modularização: reutillização e organização dos objetos.
-- Hierarquia: herança de variáveis e métodos de uma classe para outra.
-
-IDEs para Java:
-
-Eclipse, IDE líder para Java
-IntelliJ
-Netbeans
-JDeveloper
 
 ## Variáveis e Tipos de Dados
 Java é uma linguagem fortemente tipada, pois cada variável precisa ter um tipo declarado. Existem oito tipos primitivos para armazenamento de informações. Tipos primitivos não são objetos, eles são partes internas da linguage
@@ -53,6 +44,16 @@ Java é uma linguagem fortemente tipada, pois cada variável precisa ter um tipo
 | float  | 4 bytes       | aprox +/- 3.40282347E+38F (6-7 dígitos decimais significativos)|
 | double | 8 bytes       | aprox +/- 1.797693134862311570E+308 (15 dígitos decimais significativos)|
 
-O tipo char é utilizado para armazenar caracteres individuais, como letras, algarismos, sinais de pontuação, entre outros.
+O tipo **char** é utilizado para armazenar caracteres individuais, como letras, algarismos, sinais de pontuação, entre outros.
 
-O último tipo é o boolean, que possui somente dois valores, verdadeiro ( true) ou falso ( false). No Java não é possível converter números inteiros em valores booleanos.
+O último tipo é o **boolean**, que possui somente dois valores, verdadeiro ( true) ou falso ( false). No Java não é possível converter números inteiros em valores booleanos.
+
+Além disso, temos tipos não primitivos de dados, caso de **String** que corresponde a uma cadeia de caracteres Unicode, e **Object**, que se refere a qualquer objeto genérico.
+
+
+## IDEs para Java:
+
+- Eclipse (IDE líder para Java)
+- IntelliJ
+- Netbeans
+- JDeveloper
