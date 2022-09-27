@@ -36,7 +36,15 @@ Tomemos, por exemplo, a seguinte árvore:
 
 Se quisermos adicionar o valor 055, ele iria parar á direita no nó 050, gerando um desbalanceamento na subárvore cuja raiz é o 045. Portanto, para balancear a árvore é necessário uma rotação simples à esquerda, conforme animação:
 
-![](../../../../../Videos/add-50.gif)
+
+
+
+
+https://user-images.githubusercontent.com/72423464/192525507-89e42325-1f4d-4493-8243-214dbae4882e.mp4
+
+
+
+
 
 
 ## Referências
