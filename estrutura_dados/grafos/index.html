@@ -13,7 +13,7 @@
     
     
       
-        <title>Árvore AVL - Univesp por Estudantes</title>
+        <title>Grafos - Univesp por Estudantes</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#arvores-avl" class="md-skip">
+        <a href="#grafos" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Árvore AVL
+              Grafos
             
           </span>
         </div>
@@ -731,6 +731,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../avltree/" class="md-nav__link">
+        Árvore AVL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -743,12 +757,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Árvore AVL
+          Grafos
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Árvore AVL
+        Grafos
       </a>
       
         
@@ -771,25 +785,58 @@
     Definição
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#calculando-melhor-no-raiz-de-um-arvore-avl" class="md-nav__link">
-    Calculando melhor nó raiz de um árvore AVL
+    <nav class="md-nav" aria-label="Definição">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grafos-nao-direcionados" class="md-nav__link">
+    Grafos Não direcionados
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grafos-direcionados" class="md-nav__link">
+    Grafos Direcionados
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#rotacao" class="md-nav__link">
-    Rotação
+  <a href="#formas-de-representacao" class="md-nav__link">
+    Formas de Representação
   </a>
+  
+    <nav class="md-nav" aria-label="Formas de Representação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#matriz-de-adjacencias" class="md-nav__link">
+    Matriz de Adjacências
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lista-de-adjacencias" class="md-nav__link">
+    Lista de Adjacências
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exemplo-de-balanceamento" class="md-nav__link">
-    Exemplo de Balanceamento
+  <a href="#aplicacoes" class="md-nav__link">
+    Aplicações
   </a>
   
 </li>
@@ -805,20 +852,6 @@
   
 </nav>
       
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../grafos/" class="md-nav__link">
-        Grafos
-      </a>
     </li>
   
 
@@ -1081,25 +1114,58 @@
     Definição
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#calculando-melhor-no-raiz-de-um-arvore-avl" class="md-nav__link">
-    Calculando melhor nó raiz de um árvore AVL
+    <nav class="md-nav" aria-label="Definição">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grafos-nao-direcionados" class="md-nav__link">
+    Grafos Não direcionados
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grafos-direcionados" class="md-nav__link">
+    Grafos Direcionados
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#rotacao" class="md-nav__link">
-    Rotação
+  <a href="#formas-de-representacao" class="md-nav__link">
+    Formas de Representação
   </a>
+  
+    <nav class="md-nav" aria-label="Formas de Representação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#matriz-de-adjacencias" class="md-nav__link">
+    Matriz de Adjacências
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lista-de-adjacencias" class="md-nav__link">
+    Lista de Adjacências
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exemplo-de-balanceamento" class="md-nav__link">
-    Exemplo de Balanceamento
+  <a href="#aplicacoes" class="md-nav__link">
+    Aplicações
   </a>
   
 </li>
@@ -1126,70 +1192,75 @@
                   
 
 
-<h1 id="arvores-avl">Árvores AVL<a class="headerlink" href="#arvores-avl" title="Permanent link">&para;</a></h1>
+<h1 id="grafos">Grafos<a class="headerlink" href="#grafos" title="Permanent link">&para;</a></h1>
 <h2 id="definicao">Definição<a class="headerlink" href="#definicao" title="Permanent link">&para;</a></h2>
-<p>Criada
-Árvore AVL se trata de uma estrutura de dados que obedece a todas as propriedades da árvore binária e que em cada nó a diferença entre a altura da subárvora da direita e da esquerda é de <strong>1</strong>, <strong>0</strong> ou <strong>-1</strong>. Esta diferença é chamada <strong>Fator de Balanceamento</strong>. </p>
-<p>O balanceamento facilita efetivamente a busca de um elemento, por exemplo, se temos uma árvore balanceada com 10.000 elementos, precisaríamos fazer apenas 14 comparações para encontrar um elemento.</p>
-<p><img alt="img_7.png" src="../img_7.png" /></p>
-<h2 id="calculando-melhor-no-raiz-de-um-arvore-avl">Calculando melhor nó raiz de um árvore AVL<a class="headerlink" href="#calculando-melhor-no-raiz-de-um-arvore-avl" title="Permanent link">&para;</a></h2>
-<p>Ao se analisar uma árvore, dentre os seus nós, qual nó seria uma raiz adequada para torná-la perfeitamente balanceada?</p>
+<p>Se com filas e pilhas vimos estrutura de dados lineares, e com árvores vimos estruturas hierárquicas, com <strong>grafos</strong> veremos estruturas descentralizadas. </p>
+<p>A teoria dos grafos iniciou-se na cidade de Konigsberg, atual território da Rússia no ano de 1736, pelo matemático suíço Leonhard Euler (1707-1783)</p>
+<p>Grafos são amplamente usados em matemática, mas sobretudo em programação. Formalmente, um grafo é uma coleção de vértices (V) e uma coleção de arcos (E) constituídos por pares de vértices. É uma estrutura usada para representar um modelo em que existem relações entre os objetos de uma certa coleção.</p>
+<p>A teoria dos grafos estuda objetos combinatórios, pois os mesmos são bons modelos para muitos problemas em vários ramos da matemática, da informática, da engenharia, da química, da psicologia e da indústria.</p>
+<h3 id="grafos-nao-direcionados">Grafos Não direcionados<a class="headerlink" href="#grafos-nao-direcionados" title="Permanent link">&para;</a></h3>
+<p>Um grafo é dito não direcionado se as relações representadas pelas arestas não têm sentido, ou
+seja, arestas podem ser seguidas em qualquer direção, elas são bi-direcionais.</p>
+<p>Em grafos não direcionados, o grau de um vértice é o número de arestas que incidem nele.</p>
+<p>Observer que self-loops não são permitidos.</p>
+<p><img alt="img_11.png" src="../img_11.png" /></p>
+<h3 id="grafos-direcionados">Grafos Direcionados<a class="headerlink" href="#grafos-direcionados" title="Permanent link">&para;</a></h3>
+<p>Um grafo é dito direcionado se as arestas são pares ordenados de vértices, saindo de um em direção ao outro, ou seja, as arestas possuem uma direção.</p>
+<p>Em grafos direcionados, o grau é o número de arestas que saem do vértice (grau de saída) mais o número de arestas que chegam (grau de entrada).</p>
+<p><img alt="img_10.png" src="../img_10.png" /></p>
+<h2 id="formas-de-representacao">Formas de Representação<a class="headerlink" href="#formas-de-representacao" title="Permanent link">&para;</a></h2>
+<h3 id="matriz-de-adjacencias">Matriz de Adjacências<a class="headerlink" href="#matriz-de-adjacencias" title="Permanent link">&para;</a></h3>
+<p>A matriz de adjacências de um grafo é uma matriz booleana com colunas e linhas indexadas pelos vértices. Uma matriz de adjacência qualquer (M) terá a quantidade de vértices (n) de número de linha e colunas, ou seja, uma para cada vértice</p>
+<p><img alt="img_12.png" src="../img_12.png" /></p>
+<h3 id="lista-de-adjacencias">Lista de Adjacências<a class="headerlink" href="#lista-de-adjacencias" title="Permanent link">&para;</a></h3>
+<p>Consiste numa lista qual cada elemento é um nó do grafo, logo a lista possui tamanho equivalente ao número de vértices do grafo. Ela possui n lista ligadas, estas contem as conexões de cada arestas do vértice.</p>
+<p><img alt="img_13.png" src="../img_13.png" /></p>
+<h2 id="aplicacoes">Aplicações<a class="headerlink" href="#aplicacoes" title="Permanent link">&para;</a></h2>
 <ul>
-<li>O nó cuja chave representa a <strong>mediana das chaves</strong> presentes nos nós que compõem a árvore, para uma árvore com número impar de nós. </li>
-<li>Ou o nó cuja chave representa um dentre <strong>os dois valores mais próximos da mediana</strong> das chaves presentes nos nós que compõem a árvore, para uma árvore com número par de nós.</li>
+<li>
+<p>Modelagem de Circuitos Eletrônicos:</p>
+<ul>
+<li>Placas de circuito impresso.</li>
+<li>Circuitos integrados</li>
 </ul>
-<h2 id="rotacao">Rotação<a class="headerlink" href="#rotacao" title="Permanent link">&para;</a></h2>
-<p>Quando a diferença de altura de um nó for maior que 1 ou menor que -1, então, a árvore está desbalanceada e necessita de uma rotação, simples ou dupla, conforme tabela: </p>
-<table>
-<thead>
-<tr>
-<th>Nó Desbalanceado</th>
-<th>Filho do Nó Desbalanceado</th>
-<th>Tipo de Rotação</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>+2</td>
-<td>+1</td>
-<td>Simples à esquerda</td>
-</tr>
-<tr>
-<td>+2</td>
-<td>0</td>
-<td>Simples à esquerda</td>
-</tr>
-<tr>
-<td>+2</td>
-<td>-1</td>
-<td>Dupla com filho  para a direita e pai para a esquerda</td>
-</tr>
-<tr>
-<td>-2</td>
-<td>+1</td>
-<td>Dupla com filho  para a esquerda e pai para a direita</td>
-</tr>
-<tr>
-<td>-2</td>
-<td>0</td>
-<td>Simples à direita</td>
-</tr>
-<tr>
-<td>-2</td>
-<td>-1</td>
-<td>Simples à direita</td>
-</tr>
-</tbody>
-</table>
-<h2 id="exemplo-de-balanceamento">Exemplo de Balanceamento<a class="headerlink" href="#exemplo-de-balanceamento" title="Permanent link">&para;</a></h2>
-<p>Tomemos, por exemplo, a seguinte árvore:</p>
-<p><img alt="img_9.png" src="../img_9.png" /></p>
-<p>Se quisermos adicionar o valor 055, ele iria parar á direita no nó 050, gerando um desbalanceamento na subárvore cuja raiz é o 045. Portanto, para balancear a árvore é necessário uma rotação simples à esquerda, conforme animação:</p>
-<p><a href="https://user-images.githubusercontent.com/72423464/192525507-89e42325-1f4d-4493-8243-214dbae4882e.mp4">https://user-images.githubusercontent.com/72423464/192525507-89e42325-1f4d-4493-8243-214dbae4882e.mp4</a></p>
+</li>
+<li>
+<p>Redes de Transporte</p>
+<ul>
+<li>Representação de Rodovias:</li>
+<li>Mapa de Vôos</li>
+<li>Mapa de Metrô </li>
+</ul>
+</li>
+<li>
+<p>Redes de Computadores:</p>
+<ul>
+<li>Redes Locais</li>
+<li>Internet</li>
+</ul>
+</li>
+<li>
+<p>Bancos de Dados:</p>
+<ul>
+<li>Diagrama Entidade-Relacionamento</li>
+</ul>
+</li>
+<li>
+<p>Ciências:</p>
+<ul>
+<li>Átomos conectados por ligações químicas</li>
+<li>Espécies conectadas filogeneticamente</li>
+<li>Animais conectados por relações ecológicas</li>
+</ul>
+</li>
+<li>Redes Sociais</li>
+</ul>
 <h2 id="referencias">Referências<a class="headerlink" href="#referencias" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://pt.wikibooks.org/wiki/Algoritmos_e_Estruturas_de_Dados/%C3%81rvores_AVL">Algoritmos e Estruturas de Dados/Árvores AVL</a></li>
-<li><a href="https://www.youtube.com/watch?v=1JKucLqAPZ8&amp;t=1214s">UNIVESP - Estruturas de Dados - Árvores AVL</a></li>
+<li><a href="https://pt.wikiversity.org/wiki/Curso_Livre_de_Estruturas_de_Dados/Grafos">Curso Livre de Estruturas de Dados/Grafos</a></li>
+<li><a href="https://todasasrespostas.pt/o-que-e-um-grafo-estrutura-de-dados">O que é um grafo estrutura de dados?</a></li>
+<li><a href="http://wiki.icmc.usp.br/images/5/59/Grafos_I.pdf">ICMC - USP - Grafos I: Conceitos &amp; Aplicações</a></li>
+<li><a href="https://medium.com/@paulomartins_10299/grafos-representa%C3%A7%C3%A3o-e-implementa%C3%A7%C3%A3o-f260dd98823d">Grafos — representação e implementação</a></li>
 </ul>
 
 
@@ -1213,7 +1284,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
       
         
-        <a href="../arvores/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Árvores" rel="prev">
+        <a href="../avltree/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Árvore AVL" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1222,20 +1293,20 @@
               <span class="md-footer__direction">
                 Anterior
               </span>
-              Árvores
+              Árvore AVL
             </div>
           </div>
         </a>
       
       
         
-        <a href="../grafos/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Grafos" rel="next">
+        <a href="../../fundamentos_web/fund/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Ementa" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Próximo
               </span>
-              Grafos
+              Ementa
             </div>
           </div>
           <div class="md-footer__button md-icon">
