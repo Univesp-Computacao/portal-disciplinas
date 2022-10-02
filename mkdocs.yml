@@ -94,6 +94,9 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 # Customização
 extra:
@@ -134,6 +137,7 @@ nav:
     - Tabela Hash: estrutura_dados/hash-table.md
     - Árvores: estrutura_dados/arvores.md
     - Árvore AVL: estrutura_dados/avltree.md
+    - Grafos: estrutura_dados/grafos.md
   - Fundamentos Web:
     - Ementa: fundamentos_web/fund.md
     - Fundamentos HTML: fundamentos_web/html-basico.md
