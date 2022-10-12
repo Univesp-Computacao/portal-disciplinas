@@ -9,6 +9,7 @@ Apresentar noções de aspectos, funções anônimas, closures e técnicas funci
 Filter, Fold, etc).
 
 __Bibliografia Base:__
+
 - Félix, Rafael. Programação orientada a objetos. 2017. Pearson.
 - Puga, Sandra; Rissetti, Gerson. Lógica de programação e estruturas de dados
 com aplicações em Java. 2016. Pearson.
