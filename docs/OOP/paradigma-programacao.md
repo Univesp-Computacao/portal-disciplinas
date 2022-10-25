@@ -9,9 +9,14 @@ Um único problema pode ter mais de um meio de solução, isso se dá, pois, pod
 ## Paradgma Imperativo
 >>> Semelhante ao comportamento imperativo das linguagens naturais que expressam ordens, programas imperativos são uma sequência de comandos para o computador executar.
 
+Características centrais das linguagens imperativas: 
+* as variáveis, que modelam as células de memória;
+* comandos de atribuição, baseados nas operações detransferência dos dados e instruções; 
+* a execução sequencial de instruções;
+* e a forma iterativa de repetição, o método mais eficiente desta arquitetura
 
 FORTRAN, COBOL, e C são alguns examplos de linguagem de programação que suportam o paradigma imperativo.
-Paradigma de programaçõ simples
+
 
 ## Paradigma Procedural
 
@@ -22,3 +27,7 @@ Um contraste com o paradigma Imperativo
 ## Paradigma Funcional
 
 ## Paradigma Orientado à Objetos
+
+## Referências
+[PUCRS - Paradigma Imperativo](https://www.inf.pucrs.br/~gustavo/disciplinas/pli/material/paradigmas-aula09.pdf)
+[Wikipedia - Programação Imperativa](https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_imperativa)
