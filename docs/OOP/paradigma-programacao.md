@@ -6,12 +6,12 @@ Conforme o dicionário Oxford o termo paradigma se traduz por "um exemplo que se
 
 Um único problema pode ter mais de um meio de solução, isso se dá, pois, podemos combinar dados e algoritmos de maneira que obtenhamos o mesmo resultado por caminhos complemente diferentes. As linguagens de programação podem ter o viés de algum paradigma específico ou mesmo ser multiparadigma.
 
-## Paradgma Imperativo
+## Paradigma Imperativo
 >>> Semelhante ao comportamento imperativo das linguagens naturais que expressam ordens, programas imperativos são uma sequência de comandos para o computador executar.
 
 Características centrais das linguagens imperativas: 
 * as variáveis, que modelam as células de memória;
-* comandos de atribuição, baseados nas operações detransferência dos dados e instruções; 
+* comandos de atribuição, baseados nas operações de transferência dos dados e instruções; 
 * a execução sequencial de instruções;
 * e a forma iterativa de repetição, o método mais eficiente desta arquitetura
 
@@ -35,7 +35,7 @@ Podemos citar o PROLOG como liguagem que utiliza esse paradigma.
 ## Paradigma Funcional
 
 Baseado no conceito de funções matemáticas. Enfatiza o processamento de valores através do uso de expressões e funções. Tais funções podem ser passadas como parâmetros de outras funções.
-Um exemplo de Linguagem que usa esse procdimento é o LISP e seu dialeto Scheme, usada em softwares como AutoCAAD, Audacity, GIMP e Emacs.
+Um exemplo de Linguagem que usa esse procedimento é o LISP e seu dialeto Scheme, usada em softwares como AutoCAAD, Audacity, GIMP e Emacs.
 
 Outra linguagem funcinoal famosa é o R, usado para estatística. 
 
@@ -45,13 +45,13 @@ Uma característica importante é a recursividade, onde uma função invoca a si
 
 Um objeto é uma entidade abstrata que contém dados e algoritmos, dados são o **estado** de um objeto, já os algoritmos são o **comportamento** desse objeto. 
 
-As **classes** são unidades básicas da Orientação a Objetos. Objetos siilares são agrupados em uma mesma classe, é possível criar objetos a partir da classe, como também chamamos a criação de um objeto de instanciação.
+As **classes** são unidades básicas da Orientação a Objetos. Objetos similares são agrupados em uma mesma classe, é possível criar objetos a partir da classe, como também chamamos a criação de um objeto de instanciação.
 
 Diferentes objetos de uma mesma classe podem conter valores de estado diferentes, ou seja, o estado de um objeto é mantido privado de um outro objeto. E é através dos métodos que acessamos/alteramos esses valores (estados).
 
 Um método especial é o **método construtor** de uma classe: ele fornece valores iniciais ao objeto, ou permite que tais valores sejam determinados na criação. Uma classe pode ter mais de um construtor. 
 
-O paradigma de Orientação a Objetos é práticop, natural e intuitivo, quando pensamos na relação com os problemas reais. Mesmo assim, pode ser complexo seu aprendizado, levando algum tempo para compreender os seus principais conceitos: abstração, encapsulamento, polimorfismo e herança. 
+O paradigma de Orientação a Objetos é prático, natural e intuitivo, quando pensamos na relação com os problemas reais. Mesmo assim, pode ser complexo seu aprendizado, levando algum tempo para compreender os seus principais conceitos: abstração, encapsulamento, polimorfismo e herança. 
 ## Referências
 [PUCRS - Paradigma Imperativo](https://www.inf.pucrs.br/~gustavo/disciplinas/pli/material/paradigmas-aula09.pdf)
 [Wikipedia - Programação Imperativa](https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_imperativa)
