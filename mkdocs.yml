@@ -150,6 +150,7 @@ nav:
     - 04 pilares da POO: OOP/quatro-pilares.md
     - Classes: OOP/classes.md
     - Métodos: OOP/metodos.md
+    - Construtores: OOP/construtores.md
   - Redes:
     - Redes para Sobrevivência: rede/O que é Rede?.md
     - Um pouco mais sobre Rede: rede/Mais sobre conexões.md
