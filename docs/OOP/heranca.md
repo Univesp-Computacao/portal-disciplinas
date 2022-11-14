@@ -94,3 +94,7 @@ A sobrecarga de métodos está mais relacionada com o polimorfismo do que com a 
 | mesmo nome, mesmo número, ordem e tipo  de parâmetro  | Diferentes parâmetros (ordem, número, tipo)  |
 | Aplica-se apenas a métodos da instância (não-estáticos)   | Apĺica-se a qualquer método  |
 
+
+## Referências
+* SHARAN, Kishori; DAVIS, Adam L. . **Beginning Java 17 Fundamentals**: Object-Oriented Programming in Java 17. Third edition. Apress.
+* [Operador instanceof em Java](https://receitasdecodigo.com.br/java/operador-instanceof-java)
