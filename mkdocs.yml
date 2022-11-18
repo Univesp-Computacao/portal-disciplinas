@@ -153,6 +153,7 @@ nav:
     - Construtores: OOP/construtores.md
     - Herança: OOP/heranca.md
     - Interface e Classe Abstrata: OOP/interface.md
+    - Array e ArrayLists: OOP/array.md
   - Redes:
     - Redes para Sobrevivência: rede/O que é Rede?.md
     - Um pouco mais sobre Rede: rede/Mais sobre conexões.md
