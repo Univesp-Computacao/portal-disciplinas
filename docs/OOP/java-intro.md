@@ -99,7 +99,7 @@ public class Main {
 		
 		int divisaoint = a / b;  // resultado int
 		float aindaint = a / b; // apesar de ser um float, as variáveis a e b ainda são int
-		float divisaocast = (float)a / (float)b;
+		float divisaocast = (float) a / (float) b;
 		// Ao fazer o cast, a e b são convertidos para float apenas na hora da operação
 		
 

@@ -28,10 +28,11 @@ Campos representam propriedades/atributos de um objeto. O tipo de dados precede 
 
 ```java
 // Pessoa.java
-class Pessoa{
+class Pessoa {
     String nome;
     String genero;
-    int idade
+    int idade;
+}
 ```
 Todo objeto da classe Pessoa terá os atributos _nome_, _genero_ e _idade_.
 

@@ -55,7 +55,7 @@ A palavra-chave *this* é uma referência a  instância de uma classe e só pode
 
 Por exemplo: 
 ```java
- public Funcionario( String nome, int ID, double salario){
+ public Funcionario(String nome, int ID, double salario) {
     this.nome = nome;
     this.ID = ID;
     this.salario = salario;
