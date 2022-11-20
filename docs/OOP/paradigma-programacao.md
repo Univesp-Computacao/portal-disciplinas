@@ -53,8 +53,9 @@ Um método especial é o **método construtor** de uma classe: ele fornece valor
 
 O paradigma de Orientação a Objetos é prático, natural e intuitivo, quando pensamos na relação com os problemas reais. Mesmo assim, pode ser complexo seu aprendizado, levando algum tempo para compreender os seus principais conceitos: abstração, encapsulamento, polimorfismo e herança. 
 ## Referências
-[PUCRS - Paradigma Imperativo](https://www.inf.pucrs.br/~gustavo/disciplinas/pli/material/paradigmas-aula09.pdf)
-[Wikipedia - Programação Imperativa](https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_imperativa)
-[guia.dev -  Pradigmas de Programação](https://guia.dev/pt/pillars/languages-and-tools/programming-paradigms.html#:~:text=de%20baixa%20legibilidade.-,Procedural,m%C3%A9todos,%20fun%C3%A7%C3%B5es,%20rotinas).)
-[Profa. Isabel Harb Manssour - Paradigmas de Linguagem I](https://www.inf.pucrs.br/~gustavo/disciplinas/pli/material/paradigmas-aula01.pdf)
+
+- [PUCRS - Paradigma Imperativo](https://www.inf.pucrs.br/~gustavo/disciplinas/pli/material/paradigmas-aula09.pdf)
+- [Wikipedia - Programação Imperativa](https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_imperativa)
+- [guia.dev -  Pradigmas de Programação](https://guia.dev/pt/pillars/languages-and-tools/programming-paradigms.html#:~:text=de%20baixa%20legibilidade.-,Procedural,m%C3%A9todos,%20fun%C3%A7%C3%B5es,%20rotinas)
+- [Profa. Isabel Harb Manssour - Paradigmas de Linguagem I](https://www.inf.pucrs.br/~gustavo/disciplinas/pli/material/paradigmas-aula01.pdf)
 

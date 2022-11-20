@@ -7,7 +7,7 @@ O construtor é utilizado com o operador `new` para inicializar/criar uma instâ
 ## Declarando um Construtor
 
 ```
-[modificador] <nome-construtor> (<lista-parametro){ 
+[modificador] <nome-construtor> (<lista-parametro) { 
 		// corpo do construtor entre chaves
 }
 ```
@@ -27,25 +27,26 @@ Se uma classe posui **múltiplos construtores** ela é chamada de **sobrecarrega
 
 package exemplos;
 public class Gato {
-// Construtor #1
-public Gato() {
-System.out.println("Um gato foi criado.");
-}
-// Construtor #2
-public Gato(String cor) {
-System.out.println("Um gato  " + cor + " foi criado.");
-}
+    // Construtor #1
+    public Gato() {
+        System.out.println("Um gato foi criado.");
+    }
+
+    // Construtor #2
+    public Gato(String cor) {
+        System.out.println("Um gato  " + cor + " foi criado.");
+    }
 }
 
-``
+```
 
 Ao chamar a `main()` com o seguinte código:
 
 ```java
-public static void main(String[]args){
+public static void main(String[] args) {
 
-            Gato gato_1 = new Gato();
-            Gato gato_2 = new Gato("amarelo");
+    Gato gato_1 = new Gato();
+    Gato gato_2 = new Gato("amarelo");
 
 ```
 
