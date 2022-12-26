@@ -106,11 +106,11 @@ extra:
       Usamos cookies para reconhecer suas visitas repetidas e preferências. Com o seu consentimento, você está nos ajudando a
        tornar nossa documentação melhor.
     cookies:
-    analytics:
-      name: Google Analytics
-      checked: True
-      provider: google
-      property: G-6BSZF5CJEX
+      analytics:
+        name: Google Analytics
+        checked: True
+        provider: google
+        property: G-6BSZF5CJEX
 
 # tree da pagina
 nav:
