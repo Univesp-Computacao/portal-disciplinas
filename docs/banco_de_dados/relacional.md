@@ -1,91 +1,69 @@
-# Banco de Dados Relacional [em construção]
-O modelo de dados relacional foi introduzido por Edgar Codd em 1970 (IBM).
+# Banco de Dados Entidade-Relacionamento
 
-É um modelo formal, baseado na teoria matemática das relações entre conjuntos.
-
-O modelo de dados relacional é uma linguagem unificada para definição e manipulação de dados.
-
-Os SGBDs Relacionais mais conhecidos hoje são MySQL (Oracle), Oracle (Oracle) e SQL Server (Microsoft).
-
-A ideia de modelo relacional era representar entidade e relacionamento de maneira uniforme.
-
-No modelo relacional, cada linha na tabela corresponde a uma entidade ou relacionamento do mundo real.
-
-As colunas no modelo relacional (atributos de uma
-entidade), especificam como interpretar os valores de
-dados em cada linha.
-
-## ACID
-Atomicidade (a transação é executada totalmente ou é
-executada)
-Consistência (sistema sempre consistente após
-uma operação)
-Isolamento (transação não sofre interferência de outra transação concorrente)
-Durabilidade (o que foi salvo não é mais perdido)
-Força a consistência ao final de cada transação
-
-## SGBD 
-Pacote de software que facilita a criação e manutenção de
-um banco de dados.
-• A manipulação dos dados é através da realização de
-operações como consultas, alteração de dados, emissão de
-relatórios, etc.
-
-# Sistema de Banco de Dados
-Sistemas de BD são sistemas desenvolvidos com funções
-específicas, que usam Banco de dados, desenvolvidos em
-SGBDs.
-Sozinho um SGBD não significa nada, com um BD e um
-programa escrito para sua manipulação forma-se um
-sistema de BD.
-
-![img.png](img.png)
-
-## Modelo de Dados
-- Modelos de dados conceituais (alto nível)
-- Modelos de dados físicos (baixo nível)
-- Modelos de dados lógicos (representativos ou de implementação)
-
-## Instancias
-Os dados no banco de dados em um determinado momento são
-chamados estado do banco de dados (snapshot) ou instâncias.
-
-A cada novo registro inserido ou removido, o estado (instância) do
-banco se altera.
+ - O Modelo Entidade-Relacionamento (MER) é
+um modelo de dados de alto-nível criado com o
+objetivo de representar a semântica associada
+aos dados do minimundo. 
+ - O modelo de dados ER (MER) não possui ligação
+nenhum com SGBD.
+ - É utilizado para apresentar o
+que foi informado no levantamento de requisitos.
+ - É utilizado para na fase de projeto
+**conceitual**, onde o esquema conceitual do
+banco de dados da aplicação é concebido. 
+ - O esquema conceitual criado usando-se o MER
+é chamado **Diagrama Entidade-Relacionamento** (DER).
+```
+# MER:  Conjunto de conceitos e elementos de
+        modelagem que o projetista de banco
+        de dados precisa conhecer.
+        
+# DER:  Resultado do processo de modelagem
+        executado pelo projetista de dados
+        que conhece o MER.
+```
+- O objeto mais elementar que o MER
+representa é a **entidade**.
+- Cada Entidade tem propriedades particulares
+que são chamadas de **Atributos**.
 
 
-## Restrições / Chaves
-Uma **chave** é um conjunto mínimo de valores dos atributos
-que identifica unicamente uma tupla (linha).
-Garante a **restrição de unicidade** entre as tuplas de uma
-relação
+## Atributo-Chave
+
+- Todo Tipo de Entidade deve ter um atributo-chave, seja ele um atributo simples ou composto.
+- Os valores de um atributo-chave devem ser
+distintos. Esta unicidade deve valer para
+quaisquer extensões desse tipo de entidade. 
+
+**Restrição de unicidade:** proíbe que duas entidades, em um
+mesmo conjunto entidade, tenham os mesmos valores no seu
+atributo chave.
+
+## Diagrama Entidade-Relacionamento (DER)
+
+### Entidade-Atributo
+![img_1.png](img_1.png)
+
+### Relacionamentos
 
 
-## SQL
-SQL tem uma ligação com o modelo relacional pois o
-resultado de uma consulta SQL é uma tabela (também
-chamada de conjunto resultado).
-
-A linguagem SQL se divide em subgrupos:
-
-DDL: 
-- É a linguagem que define a ESTRUTURA do BD.
-- Seus comandos permitem a criação, alteração e
-exclusão de objetos em um banco de dados.
-- Exemplo: CREATE, ALTER, DROP
-
- 
-DML(Linguagem de Manipulação de Dados):
-- Linguagem que manipula os dados no banco.
-- Seus comandos permitem a recuperação, inserção, alteração
-e exclusão de dados.
-- Exemplo: INSERT. UPDATE, DELETE
+![img_3.png](img_3.png)
 
 
-DQL (Linguagem de consulta de Dados):
-- Comando SELECT é a instrução Básica para recuperar
-informações.
-- O formato básico da declaração SELECT é composto por três
-cláusulas (SELECT, FROM e WHERE).
+## Cardinalidade
+ A cardinalidade define o número de ocorrências de uma entidade relacionada a uma ocorrência de outra entidade. Por exemplo, uma cardinalidade de "1:N" significa que uma entidade pode estar relacionada com várias ocorrências de outra entidade.
 
 
+- **Relacionamento 1:1 (um para um)** Ex.: uma pessoa possui um único CPF, e um número de CPF pertence a uma única pessoa.
+- **Relacionamento 1:n** (um para muitos) Ex.: uma montadora de carros possui vários modelos.
+- **Relacionamento n:n** (muitos para muitos): Ex.: um ator participa de vários filmes, um filmes possui vários autores.
+
+
+
+---
+## Referências
+- [ENTIDADE-RELACIONAMENTO E ABORDAGEM RELACIONAL - INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO RIO GRANDE DO NORTE CAMPUS JOÃO CÂMARA - Nickerson Fonseca Ferreira](file:///home/yusuf/Downloads/A02_BD_MER%20e%20Modelo%20Logico.pdf) 
+- [Modelo Entidade - Relacionamento - DCC-IME-USP - João Eduardo Ferreira
+Osvaldo Kotaro Takai ](https://www.ime.usp.br/~jef/bd02.pdf)
+- [UNIVESP - Banco de Dados - Visão geral sobre banco de dados - José Eduardo Santarem](https://www.youtube.com/watch?v=Uua7T2Dzndk&ab_channel=UNIVESP)
+- [UNIVESP - Banco de Dados - Modelo Entidade-Relacionamento (MER) - Parte I: entidades, atributos, chaves ](https://www.youtube.com/watch?v=IpFn-KsWPW0&ab_channel=UNIVESP)

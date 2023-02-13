@@ -124,7 +124,7 @@ nav:
     - Manipulando arquivos: algoritmos_e_programação/arquivos.md    
   - Banco de Dados:
     - inicio: banco_de_dados/ini.md
-    - Modelo Relacional: banco_de_dados/relacional.md
+    - MER Modelo Entidade-Relacionamento: banco_de_dados/relacional.md
     - NoSQL: banco_de_dados/nosql.md
   - Estrutura de Dados:
     - Ementa: estrutura_dados/est.md
