@@ -62,7 +62,7 @@ atributo chave.
 
 ---
 ## Referências
-- [ENTIDADE-RELACIONAMENTO E ABORDAGEM RELACIONAL - INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO RIO GRANDE DO NORTE CAMPUS JOÃO CÂMARA - Nickerson Fonseca Ferreira](file:///home/yusuf/Downloads/A02_BD_MER%20e%20Modelo%20Logico.pdf) 
+- [ENTIDADE-RELACIONAMENTO E ABORDAGEM RELACIONAL - INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO RIO GRANDE DO NORTE CAMPUS JOÃO CÂMARA - Nickerson Fonseca Ferreira](https://docente.ifrn.edu.br/nickersonferreira/disciplinas/programacao-com-acesso-a-banco-de-dados-3o-ano/aula-02-modelo-entidade-relacionamento-e-relacional/view)
 - [Modelo Entidade - Relacionamento - DCC-IME-USP - João Eduardo Ferreira
 Osvaldo Kotaro Takai ](https://www.ime.usp.br/~jef/bd02.pdf)
 - [UNIVESP - Banco de Dados - Visão geral sobre banco de dados - José Eduardo Santarem](https://www.youtube.com/watch?v=Uua7T2Dzndk&ab_channel=UNIVESP)
