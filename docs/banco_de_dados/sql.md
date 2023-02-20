@@ -1,4 +1,3 @@
-SGBD
 SGBD é um pacote de software que facilita a criação e manutenção de um banco de dados. A manipulação dos dados é feita através da realização de operações como consultas, alteração de dados, emissão de relatórios, etc.
 
 Controle de acesso: o SGBD oferece um subsistema de autorização e segurança que previne que usuários acessem dados sem que estejam autorizados.
@@ -17,7 +16,7 @@ Promove economia de escala.
 Sistema de Banco de Dados
 Sistemas de BD são sistemas desenvolvidos com funções específicas, que usam Banco de dados, desenvolvidos em SGBDs. Sozinho um SGBD não significa nada, com um Banco de Dados e um programa escrito para sua manipulação forma-se um sistema de BD.
 
-imgpng
+
 
 Modelo de Dados
 Modelos de dados conceituais (alto nível)
