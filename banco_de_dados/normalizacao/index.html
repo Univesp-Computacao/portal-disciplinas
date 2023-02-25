@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../referencias-e-copias/">
+        <link rel="prev" href="../relacional/">
       
       
-        <link rel="next" href="../lista-ligada/">
+        <link rel="next" href="../nosql/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.14">
     
     
       
-        <title>Fila e Pilha - conceitos - Univesp por Estudantes</title>
+        <title>Normalização - Univesp por Estudantes</title>
       
     
     
@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#fila-e-pilha" class="md-skip">
+        <a href="#normalizacao" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Fila e Pilha - conceitos
+              Normalização
             
           </span>
         </div>
@@ -241,13 +241,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../banco_de_dados/ini/" class="md-tabs__link">
+      <a href="../ini/" class="md-tabs__link md-tabs__link--active">
         Banco de Dados
       </a>
     </li>
@@ -257,15 +259,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../est/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../estrutura_dados/est/" class="md-tabs__link">
         Estrutura de Dados
       </a>
     </li>
@@ -503,16 +503,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
       
       
         
@@ -533,7 +533,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Banco de Dados
@@ -546,7 +546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../banco_de_dados/ini/" class="md-nav__link">
+      <a href="../ini/" class="md-nav__link">
         Ementa
       </a>
     </li>
@@ -560,7 +560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../banco_de_dados/entidade-relacionamento/" class="md-nav__link">
+      <a href="../entidade-relacionamento/" class="md-nav__link">
         Modelo Entidade-Relacionamento
       </a>
     </li>
@@ -574,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../banco_de_dados/relacional/" class="md-nav__link">
+      <a href="../relacional/" class="md-nav__link">
         Modelo Relacional
       </a>
     </li>
@@ -586,11 +586,94 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../banco_de_dados/normalizacao/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Normalização
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Normalização
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#conceitos-dependencia-funcional-e-transitiva" class="md-nav__link">
+    Conceitos: Dependência Funcional e Transitiva
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primeira-forma-normal-1fn" class="md-nav__link">
+    Primeira Forma Normal (1FN)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#segunda-forma-normal-2fn" class="md-nav__link">
+    Segunda Forma Normal (2FN)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terceira-forma-normal-3fn" class="md-nav__link">
+    Terceira Forma Normal (3FN)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forma-normal-de-boyce-codd" class="md-nav__link">
+    Forma Normal de Boyce-Codd
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vantagens-da-normalizacao" class="md-nav__link">
+    Vantagens da Normalização
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    Referências
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -602,7 +685,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../banco_de_dados/nosql/" class="md-nav__link">
+      <a href="../nosql/" class="md-nav__link">
         NoSQL
       </a>
     </li>
@@ -622,16 +705,16 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
       
       
         
@@ -662,7 +745,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           Estrutura de Dados
@@ -675,7 +758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../est/" class="md-nav__link">
+      <a href="../../estrutura_dados/est/" class="md-nav__link">
         Ementa
       </a>
     </li>
@@ -689,7 +772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../conceitosbasicos/" class="md-nav__link">
+      <a href="../../estrutura_dados/conceitosbasicos/" class="md-nav__link">
         Conceitos Básicos C++
       </a>
     </li>
@@ -703,7 +786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pointer/" class="md-nav__link">
+      <a href="../../estrutura_dados/pointer/" class="md-nav__link">
         Ponteiro
       </a>
     </li>
@@ -717,7 +800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../referencias-e-copias/" class="md-nav__link">
+      <a href="../../estrutura_dados/referencias-e-copias/" class="md-nav__link">
         Referências e Cópias
       </a>
     </li>
@@ -729,66 +812,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Fila e Pilha - conceitos
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../estrutura_dados/fila_pilha/" class="md-nav__link">
         Fila e Pilha - conceitos
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Índice">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Índice
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#pilha-vetorial" class="md-nav__link">
-    Pilha (vetorial)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fila-vetorial" class="md-nav__link">
-    Fila (vetorial)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#referencias" class="md-nav__link">
-    Referências
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -800,7 +828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lista-ligada/" class="md-nav__link">
+      <a href="../../estrutura_dados/lista-ligada/" class="md-nav__link">
         Lista Ligada
       </a>
     </li>
@@ -814,7 +842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hash-table/" class="md-nav__link">
+      <a href="../../estrutura_dados/hash-table/" class="md-nav__link">
         Tabela Hash
       </a>
     </li>
@@ -828,7 +856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../arvores/" class="md-nav__link">
+      <a href="../../estrutura_dados/arvores/" class="md-nav__link">
         Árvores
       </a>
     </li>
@@ -842,7 +870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../avltree/" class="md-nav__link">
+      <a href="../../estrutura_dados/avltree/" class="md-nav__link">
         Árvore AVL
       </a>
     </li>
@@ -856,7 +884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../grafos/" class="md-nav__link">
+      <a href="../../estrutura_dados/grafos/" class="md-nav__link">
         Grafos
       </a>
     </li>
@@ -1286,15 +1314,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pilha-vetorial" class="md-nav__link">
-    Pilha (vetorial)
+  <a href="#conceitos-dependencia-funcional-e-transitiva" class="md-nav__link">
+    Conceitos: Dependência Funcional e Transitiva
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#fila-vetorial" class="md-nav__link">
-    Fila (vetorial)
+  <a href="#primeira-forma-normal-1fn" class="md-nav__link">
+    Primeira Forma Normal (1FN)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#segunda-forma-normal-2fn" class="md-nav__link">
+    Segunda Forma Normal (2FN)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terceira-forma-normal-3fn" class="md-nav__link">
+    Terceira Forma Normal (3FN)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forma-normal-de-boyce-codd" class="md-nav__link">
+    Forma Normal de Boyce-Codd
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vantagens-da-normalizacao" class="md-nav__link">
+    Vantagens da Normalização
   </a>
   
 </li>
@@ -1321,59 +1377,70 @@
                   
 
 
-<h1 id="fila-e-pilha">Fila e Pilha<a class="headerlink" href="#fila-e-pilha" title="Permanent link">&para;</a></h1>
-<p>Tanto fila como pilha são estrutura de dados <strong>lineares</strong>, ou seja, possuem ligação com um único antecedente e com um único sucessor, desse modo:</p>
-<p><img alt="image" src="https://user-images.githubusercontent.com/72423464/184858945-0722a600-5a37-472c-990b-aadb75c7cc33.png" /></p>
-<h2 id="pilha-vetorial">Pilha (vetorial)<a class="headerlink" href="#pilha-vetorial" title="Permanent link">&para;</a></h2>
-<p>Uma pilha (ou <em>stack</em> em inglês) é uma estrutura linear na qual <strong>inserções e remoções ocorrem no topo da pilha</strong>.</p>
-<p>Numa pilha, a manipulação dos elementos é realizada em apenas uma das extremidades, chamada de topo, em oposição a outra extremidade, chamada de base.</p>
-<p><strong>Características:</strong></p>
+<h1 id="normalizacao">Normalização<a class="headerlink" href="#normalizacao" title="Permanent link">&para;</a></h1>
+<p>Normalização é processo do qual os esquemas de relação são sucessivamente <strong>decompostos</strong> até que satisfaçam determinadas propriedades ou formas normais, <strong>evitando redundância e reduzindo a complexidade</strong>.</p>
+<p>A qualidade de um projeto de banco de dados pode ser
+medida a partir da verificação da forma normal que ele
+alcança.</p>
+<h2 id="conceitos-dependencia-funcional-e-transitiva">Conceitos: Dependência Funcional e Transitiva<a class="headerlink" href="#conceitos-dependencia-funcional-e-transitiva" title="Permanent link">&para;</a></h2>
+<p><strong>Dependência Funcional:</strong> Uma dependência funcional é um relacionamento entre dois ou mais atributos, de forma que o valor de um atributo identifica o valor do outro atributo, por exemplo, com o número de matrícula de um aluno, encontramos o nome deste aluno. Pode ser representado como: CPF -&gt; nome_aluno.</p>
+<p><strong>Dependência Funcional Transitiva:</strong> Quando um ou mais campos de uma entidade não são dependentes diretamente da chave primária, ou de parte dela, mas sim dependente de outro campo da tabela (campo este que não a Chave Primária), temos uma dependência funcional transitiva.</p>
+<h2 id="primeira-forma-normal-1fn">Primeira Forma Normal (1FN)<a class="headerlink" href="#primeira-forma-normal-1fn" title="Permanent link">&para;</a></h2>
+<p>A mais simples das formas normais consiste em: </p>
 <ul>
-<li>O último elemento a entrar tem que ser o primeiro a sair (<em>Last-In-First-Out</em>).</li>
-<li>Permitem acesso a apenas o último item inserido.</li>
-<li>Inserções e remoções ocorrem no topo.</li>
+<li>Eliminar atributos compostos e/ou multivalorados.</li>
+<li>Impedir "relações dentro de relações", "tabelas dentro de tabelas".</li>
+<li>Garantir que os valores sejam atômicos.</li>
 </ul>
-<p><img alt="pilha" src="https://user-images.githubusercontent.com/72423464/184860157-8d7d21d5-ed30-4cb3-8676-f41106b7b178.gif" /></p>
-<p><strong>Principais funções:</strong></p>
+<p><img alt="img_7.png" src="../img_7.png" /></p>
+<p>Para normalizar a tabela acima de acordo com a 1FN, cria se outra tabela relacionando as localizações aos números de departamentos:</p>
+<p><img alt="img_8.png" src="../img_8.png" /></p>
+<h2 id="segunda-forma-normal-2fn">Segunda Forma Normal (2FN)<a class="headerlink" href="#segunda-forma-normal-2fn" title="Permanent link">&para;</a></h2>
+<p>Uma relação <strong>R</strong> estará de acordo com a segunda forma normal (2FN) se:</p>
 <ul>
-<li><code>isEmpty()</code> : chamada para verificar se a pilha está vazia.</li>
-<li><code>isFull()</code> : chamada para verificar se a estrutura está completa (quando possui tamanho fixo).</li>
-<li><code>push()</code> :  inserção de elementos no topo da pilha; empilhar.</li>
-<li><code>pop()</code> : remoção do elemento que está no opo da pilha; desempilhar.</li>
+<li>previamente, ela estiver de acordo com a 1FN;</li>
+<li>todo o atributo de <strong>R</strong> não pertecente a uma de suas chaves for totalmente dependente da chave primária;</li>
+<li>a relação não possuir nenhuma dependência parcial.</li>
 </ul>
-<p><strong>Principais usos</strong> </p>
+<p>Considere a seguinte tabela, que <strong>não</strong> está de acordo com a 2FN:</p>
+<p><img alt="img_9.png" src="../img_9.png" /></p>
+<p>Para normalizar esta tabela cria-se uma tabela para <strong>Produtos</strong> e outra tabela para <strong>Vendas</strong>:</p>
+<p><img alt="img_10.png" src="../img_10.png" /></p>
+<h2 id="terceira-forma-normal-3fn">Terceira Forma Normal (3FN)<a class="headerlink" href="#terceira-forma-normal-3fn" title="Permanent link">&para;</a></h2>
+<p>A terceira forma normal visa eliminar dependência transitiva de atributo <strong>não-chave</strong>, ou seja, quando encontramos um atributo que depende de outro atributo, sendo que nenhum dos dois é uma chave primária, precisamos corrigir a tabela para a terceira forma normal.</p>
+<p><img alt="img_11.png" src="../img_11.png" /></p>
+<p>Fazendo a análise de dependência funcional de cada atributo, concluimos que:</p>
 <ul>
-<li>O comando de desfazer a última operação (ctrl+z / cmd+z)</li>
-<li>Navegação entre páginas.</li>
-<li>Função recursiva;</li>
+<li><strong>nr_pedido</strong> chegamos ao <strong>codigo_cliente</strong>;</li>
+<li><strong>nr_pedido</strong> chegamos na <strong>data_pedido</strong>;</li>
+<li><strong>codigo_cliente</strong> chegamos no <strong>nome_cliente</strong>;</li>
+<li><strong>codigo_cliente</strong> chegamos no <strong>cod_cidade_cliente</strong>;</li>
+<li><strong>cod_cidade_cliente</strong> chegamos no <strong>nome_cidade_cliente</strong>.</li>
 </ul>
-<h2 id="fila-vetorial">Fila (vetorial)<a class="headerlink" href="#fila-vetorial" title="Permanent link">&para;</a></h2>
-<p>Uma fila (ou <em>queue</em>) é uma estrutura linear na qual as <strong>inserções ocorrem no final</strong> e as <strong>exclusões ocorrem no início</strong>.</p>
-<p>Todas as operações em uma fila podem ser imaginadas como as que ocorre numa fila de pessoas num banco, exceto que os elementos não se movem na fila, conforme o primeiro elemento é retirado. Isto seria muito custoso para o computador. O que se faz na realidade é indicar quem é o primeiro.</p>
-<p><strong>Caracterísiticas</strong></p>
+<p>Observa-se que apenas os atributos primos <strong>codigo_cliente</strong> e <strong>data_pedido</strong> dependem não transitivamente da chave primária.</p>
+<p>Para normalizarmos, de acordo com a 3FN, resolvemos da seguinte maneira: 
+<img alt="img_12.png" src="../img_12.png" /></p>
+<h2 id="forma-normal-de-boyce-codd">Forma Normal de Boyce-Codd<a class="headerlink" href="#forma-normal-de-boyce-codd" title="Permanent link">&para;</a></h2>
+<p>Esta forma normal é considerada uma extensão da 3.ª forma normal, porém, mais rígida. 
+Esta norma afirma que todos os dados em uma tabela devem depender apenas da chave primária dessa tabela e não de qualquer outro campo da tabela.</p>
+<h2 id="vantagens-da-normalizacao">Vantagens da Normalização<a class="headerlink" href="#vantagens-da-normalizacao" title="Permanent link">&para;</a></h2>
+<p>Com a aplicação das regras formais evitamos problemas como:</p>
 <ul>
-<li>O primeiro elemento a entrar na estrutura tem que ser o primeiro a sair (<em>First-In-First-Out</em>).</li>
-<li>Inserções ocorrem no final e remoções ocorrem no início.</li>
+<li>grupos repetitivos (atributos multivalorados) de dados;</li>
+<li>variação temporal de certos atributos, dependências funcionais totais ou parciais em relação a uma chave concatenada;</li>
+<li>redundâncias de dados desnecessárias;</li>
+<li>perdas acidentais de informação;</li>
+<li>dificuldade na representação de fatos da realidade observada;</li>
+<li>dependências transitivas entre atributos.</li>
 </ul>
-<p><img alt="fila" src="https://user-images.githubusercontent.com/72423464/185724135-22906bb9-0ca6-4a2f-aa77-41db37719278.gif" /></p>
-<p><strong>Principais funções</strong></p>
-<ul>
-<li><code>queue()</code> - enfileirar</li>
-<li><code>dequeue()</code> - desinfileirar </li>
-<li>Além das funções <code>isEmpty()</code> e <code>isFull()</code> , semelhantes à pilha.</li>
-</ul>
-<p><strong>Principais usos</strong></p>
-<ul>
-<li>Documentos enviados para impressões.</li>
-<li>Troca de mensagens entre processos em Sistemas Operacionais.</li>
-<li>Troca de mensagens entre computadores em uma rede.</li>
-</ul>
-<hr />
 <h2 id="referencias">Referências<a class="headerlink" href="#referencias" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://www.cos.ufrj.br/~rfarias/cos121/pilhas.html">https://www.cos.ufrj.br/~rfarias/cos121/pilhas.html</a></li>
-<li><a href="https://www.cos.ufrj.br/~rfarias/cos121/filas.html">https://www.cos.ufrj.br/~rfarias/cos121/filas.html</a></li>
-<li><a href="https://cathyatseneca.github.io/DSAnim/web/llstack.html">https://cathyatseneca.github.io/DSAnim/web/llstack.html</a></li>
+<li><a href="https://www.youtube.com/watch?v=Mhd2bI5pJuo">Banco de Dados - Normalização - Parte 1 - Prof. Eduardo Santarém (UNIVESP)</a></li>
+<li><a href="https://www.youtube.com/watch?v=jnT7BnrVSmo">Banco de Dados - Normalização - Parte 2 - Prof. Eduardo Santarém (UNIVESP)</a></li>
+<li><a href="https://www.luis.blog.br/segunda-forma-normal-2fn-normalizacao-de-dados.html">Segunda Forma Normal 2FN - Luis Blog</a></li>
+<li><a href="https://www.luis.blog.br/terceira-forma-normal-3fn-normalizacao-de-dados.html">Terceira Forma Normal 3FN - Luis Blog</a></li>
+<li><a href="https://www.ime.usp.br/~andrers/aulas/bd2005-1/aula11.html">Fundamentos de Armazenamento e manipulação de Dados - Prof. Andre Rodrigo Sanches (USP)</a></li>
+<li><a href="https://www.hashtagtreinamentos.com/o-que-sao-formas-normais-em-bancos-de-dados-sql?gclid=CjwKCAiA9NGfBhBvEiwAq5vSyzDKGU_rTk0F8SpdfZ2i9VJIN48Y6JCAyhAfeNjPiJJ6_SSGx1FpXBoC6KIQAvD_BwE">O que são formas normais em bancos de dados sql? - Hashtag Treinamentos</a></li>
 </ul>
 
 
