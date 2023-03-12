@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../glossario-web/">
+        <link rel="prev" href="../normalizacao/">
       
       
-        <link rel="next" href="../../OOP/oop/">
+        <link rel="next" href="../nosql/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.2">
     
     
       
-        <title>Guias, Tutoriais, etc. - Univesp por Estudantes</title>
+        <title>Exercício SQL - Univesp por Estudantes</title>
       
     
     
@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#guias-tutoriais-e-referencias-para-os-fundamentos-da-web" class="md-skip">
+        <a href="#exercicio-sql" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Guias, Tutoriais, etc.
+              Exercício SQL
             
           </span>
         </div>
@@ -241,13 +241,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../banco_de_dados/ini/" class="md-tabs__link">
+      <a href="../ini/" class="md-tabs__link md-tabs__link--active">
         Banco de Dados
       </a>
     </li>
@@ -273,15 +275,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../fund/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../fundamentos_web/fund/" class="md-tabs__link">
         Fundamentos Web
       </a>
     </li>
@@ -503,16 +503,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
       
       
         
@@ -535,7 +535,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Banco de Dados
@@ -548,7 +548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../banco_de_dados/ini/" class="md-nav__link">
+      <a href="../ini/" class="md-nav__link">
         Ementa
       </a>
     </li>
@@ -562,7 +562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../banco_de_dados/entidade-relacionamento/" class="md-nav__link">
+      <a href="../entidade-relacionamento/" class="md-nav__link">
         Modelo Entidade-Relacionamento
       </a>
     </li>
@@ -576,7 +576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../banco_de_dados/relacional/" class="md-nav__link">
+      <a href="../relacional/" class="md-nav__link">
         Modelo Relacional
       </a>
     </li>
@@ -590,7 +590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../banco_de_dados/normalizacao/" class="md-nav__link">
+      <a href="../normalizacao/" class="md-nav__link">
         Normalização
       </a>
     </li>
@@ -602,11 +602,114 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../banco_de_dados/exercicio_sql/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Exercício SQL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Exercício SQL
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#descricao-do-exercicio" class="md-nav__link">
+    Descrição do exercício
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelo-de-negocios-biblioteca" class="md-nav__link">
+    Modelo de negócios: Biblioteca
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dados" class="md-nav__link">
+    Dados
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercicios" class="md-nav__link">
+    Exercícios
+  </a>
+  
+    <nav class="md-nav" aria-label="Exercícios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-criando-tabelas" class="md-nav__link">
+    1. Criando Tabelas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-exibir-nome-de-livros-disponiveis" class="md-nav__link">
+    2. Exibir nome de livros disponíveis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-exibir-livros-de-determinado-genero" class="md-nav__link">
+    3. Exibir livros de determinado gênero
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-usando-a-funcao-count" class="md-nav__link">
+    4. Usando a função COUNT()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observacoes" class="md-nav__link">
+    Observações
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -618,7 +721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../banco_de_dados/nosql/" class="md-nav__link">
+      <a href="../nosql/" class="md-nav__link">
         NoSQL
       </a>
     </li>
@@ -837,16 +940,16 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
       
       
         
@@ -865,7 +968,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           Fundamentos Web
@@ -878,7 +981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../fund/" class="md-nav__link">
+      <a href="../../fundamentos_web/fund/" class="md-nav__link">
         Ementa
       </a>
     </li>
@@ -892,7 +995,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../html-basico/" class="md-nav__link">
+      <a href="../../fundamentos_web/html-basico/" class="md-nav__link">
         Fundamentos HTML
       </a>
     </li>
@@ -906,7 +1009,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../glossario-web/" class="md-nav__link">
+      <a href="../../fundamentos_web/glossario-web/" class="md-nav__link">
         Glossário Web
       </a>
     </li>
@@ -918,80 +1021,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Guias, Tutoriais, etc.
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../fundamentos_web/guias-tutoriais-etc/" class="md-nav__link">
         Guias, Tutoriais, etc.
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Índice">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Índice
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#lista-composta-de-materiais-diretamente-relacionados-aos-fundamentos-da-web" class="md-nav__link">
-    Lista composta de materiais diretamente relacionados aos Fundamentos da Web.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ajude-nos-a-construir-essa-lista-de-suas-sugestoes" class="md-nav__link">
-    Ajude-nos a construir essa lista: dê suas sugestões!
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#referencias" class="md-nav__link">
-    Referências
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tutoriais" class="md-nav__link">
-    Tutoriais
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#diversos" class="md-nav__link">
-    Diversos
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1316,36 +1350,70 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#lista-composta-de-materiais-diretamente-relacionados-aos-fundamentos-da-web" class="md-nav__link">
-    Lista composta de materiais diretamente relacionados aos Fundamentos da Web.
+  <a href="#descricao-do-exercicio" class="md-nav__link">
+    Descrição do exercício
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ajude-nos-a-construir-essa-lista-de-suas-sugestoes" class="md-nav__link">
-    Ajude-nos a construir essa lista: dê suas sugestões!
+  <a href="#modelo-de-negocios-biblioteca" class="md-nav__link">
+    Modelo de negócios: Biblioteca
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#referencias" class="md-nav__link">
-    Referências
+  <a href="#dados" class="md-nav__link">
+    Dados
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tutoriais" class="md-nav__link">
-    Tutoriais
+  <a href="#exercicios" class="md-nav__link">
+    Exercícios
   </a>
+  
+    <nav class="md-nav" aria-label="Exercícios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-criando-tabelas" class="md-nav__link">
+    1. Criando Tabelas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-exibir-nome-de-livros-disponiveis" class="md-nav__link">
+    2. Exibir nome de livros disponíveis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-exibir-livros-de-determinado-genero" class="md-nav__link">
+    3. Exibir livros de determinado gênero
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-usando-a-funcao-count" class="md-nav__link">
+    4. Usando a função COUNT()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#diversos" class="md-nav__link">
-    Diversos
+  <a href="#observacoes" class="md-nav__link">
+    Observações
   </a>
   
 </li>
@@ -1365,40 +1433,84 @@
                   
 
 
-<h1 id="guias-tutoriais-e-referencias-para-os-fundamentos-da-web">Guias, Tutoriais e Referências para os fundamentos da Web<a class="headerlink" href="#guias-tutoriais-e-referencias-para-os-fundamentos-da-web" title="Permanent link">&para;</a></h1>
-<h3 id="lista-composta-de-materiais-diretamente-relacionados-aos-fundamentos-da-web"><img alt="📌" class="twemoji" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f4cc.svg" title=":pushpin:" /> Lista composta de materiais diretamente relacionados aos Fundamentos da Web.<a class="headerlink" href="#lista-composta-de-materiais-diretamente-relacionados-aos-fundamentos-da-web" title="Permanent link">&para;</a></h3>
-<h3 id="ajude-nos-a-construir-essa-lista-de-suas-sugestoes"><img alt="🚧" class="twemoji" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f6a7.svg" title=":construction:" /> Ajude-nos a construir essa lista: dê suas sugestões!<a class="headerlink" href="#ajude-nos-a-construir-essa-lista-de-suas-sugestoes" title="Permanent link">&para;</a></h3>
-<h3 id="referencias">Referências<a class="headerlink" href="#referencias" title="Permanent link">&para;</a></h3>
+<h1 id="exercicio-sql">Exercício SQL<a class="headerlink" href="#exercicio-sql" title="Permanent link">&para;</a></h1>
+<h2 id="descricao-do-exercicio">Descrição do exercício<a class="headerlink" href="#descricao-do-exercicio" title="Permanent link">&para;</a></h2>
+<p>Através do banco de dados <a href="https://www.sqlite.org/index.html">SQLite</a> e do <a href="https://sqlitebrowser.org">SQLiteBrowser</a>, é criado um modelo de negócios simples simulando uma biblioteca para realizar a criação das tabelas e operações básicas de consulta, utilizando a linguagem SQL.</p>
+<h2 id="modelo-de-negocios-biblioteca">Modelo de negócios: Biblioteca<a class="headerlink" href="#modelo-de-negocios-biblioteca" title="Permanent link">&para;</a></h2>
+<p><img alt="img_13.png" src="../img_13.png" /></p>
+<h2 id="dados">Dados<a class="headerlink" href="#dados" title="Permanent link">&para;</a></h2>
+<p>Para exemplificar o exercício temos um banco de dados com apenas 10 linhas, cada linha representando um livro:
+<img alt="img_14.png" src="../img_14.png" /></p>
+<p>E como clientes apenas 05 usuários:</p>
+<p><img alt="img_15.png" src="../img_15.png" /></p>
+<h2 id="exercicios">Exercícios<a class="headerlink" href="#exercicios" title="Permanent link">&para;</a></h2>
+<h3 id="1-criando-tabelas">1. Criando Tabelas<a class="headerlink" href="#1-criando-tabelas" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://www.w3c.br">Consórcio World Wide Web (pt-BR)</a></li>
-<li><a href="https://www.ietf.org">IETF - Internet Engineering Task Force (en)</a></li>
-<li><a href="https://www.w3schools.com/html/default.asp">W3 Schools  (pt-BR)</a></li>
-<li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP">HTTP - mdn web docs (pt-BR)</a></li>
-<li><a href="https://schema.org/docs/gs.html">Vocabulário para microdata (en)</a></li>
-<li><a href="https://caniuse.com">Can I Use? - site para verificar suporte dos brownsers a tecnologias web.</a></li>
+<li>Tabela CLIENTE:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="ss">&quot;biblioteca_cliente&quot;</span><span class="w"> </span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">(</span><span class="ss">&quot;id&quot;</span><span class="w"> </span><span class="nb">integer</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="n">AUTOINCREMENT</span><span class="p">,</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="ss">&quot;nome_cliente&quot;</span><span class="w"> </span><span class="nb">varchar</span><span class="p">(</span><span class="mi">400</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="ss">&quot;cep_cliente&quot;</span><span class="w"> </span><span class="nb">varchar</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="ss">&quot;data_nasc&quot;</span><span class="w"> </span><span class="nb">date</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">);</span>
+</code></pre></div></li>
+<li>
+<p>Tabela GENERO:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="ss">&quot;biblioteca_genero&quot;</span><span class="w"> </span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">(</span><span class="ss">&quot;id&quot;</span><span class="w"> </span><span class="nb">integer</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="n">AUTOINCREMENT</span><span class="p">,</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w"> </span><span class="ss">&quot;descricao&quot;</span><span class="w"> </span><span class="nb">varchar</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">);</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>Tabela LIVRO:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="ss">&quot;biblioteca_livro&quot;</span><span class="w"> </span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">(</span><span class="ss">&quot;id&quot;</span><span class="w"> </span><span class="nb">integer</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="n">AUTOINCREMENT</span><span class="p">,</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="ss">&quot;titulo&quot;</span><span class="w"> </span><span class="nb">varchar</span><span class="p">(</span><span class="mi">250</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="ss">&quot;subtitulo&quot;</span><span class="w"> </span><span class="nb">varchar</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="ss">&quot;autor&quot;</span><span class="w"> </span><span class="nb">integer</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="ss">&quot;status&quot;</span><span class="w"> </span><span class="nb">integer</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="ss">&quot;cod_genero_id&quot;</span><span class="w"> </span><span class="nb">bigint</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="ss">&quot;biblioteca_genero&quot;</span><span class="w"> </span><span class="p">(</span><span class="ss">&quot;id&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="p">);</span>
+</code></pre></div></p>
+</li>
+<li>Tabela EMPRESTIMO:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="ss">&quot;biblioteca_emprestimo&quot;</span><span class="w"> </span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">(</span><span class="ss">&quot;id&quot;</span><span class="w"> </span><span class="nb">integer</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="n">AUTOINCREMENT</span><span class="p">,</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w"> </span><span class="ss">&quot;data_emprestimo&quot;</span><span class="w"> </span><span class="nb">date</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w"> </span><span class="ss">&quot;cod_cliente_id&quot;</span><span class="w"> </span><span class="nb">bigint</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="ss">&quot;biblioteca_cliente&quot;</span><span class="w"> </span><span class="p">(</span><span class="ss">&quot;id&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">,</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w"> </span><span class="ss">&quot;cod_livro_id&quot;</span><span class="w"> </span><span class="nb">bigint</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="ss">&quot;biblioteca_livro&quot;</span><span class="w"> </span><span class="p">(</span><span class="ss">&quot;id&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="p">);</span>
+</code></pre></div></li>
 </ul>
-<h3 id="tutoriais">Tutoriais<a class="headerlink" href="#tutoriais" title="Permanent link">&para;</a></h3>
-<ul>
-<li><a href="https://learn.shayhowe.com">Learn to Code HTML &amp; CSS (en)</a></li>
-<li><a href="https://cssreference.io">CSS Reference (en)</a></li>
-<li><a href="https://www.cssbasics.com">CSS Basics (en)</a></li>
-<li><a href="https://internetingishard.netlify.app/html-and-css/semantic-html/index.html">Semantic HTML (en)</a> </li>
-</ul>
-<h3 id="diversos">Diversos<a class="headerlink" href="#diversos" title="Permanent link">&para;</a></h3>
-<ul>
-<li><a href="https://pattle.github.io/simpsons-in-css">Os personagens do Simpsons desenhados com CSS puro</a></li>
-<li><a href="https://unsplash.com/">Unsplash - Imagens de uso livre</a></li>
-<li><a href="https://www.figma.com">Figma - Software de design</a></li>
-<li><a href="https://fontawesome.com/">Font Awesome - ícones de uso gratuito</a></li>
-<li><a href="https://fonts.google.com/">Fonts Google - fontes de uso gratuito</a></li>
-<li><a href="https://webgradients.com/">Gradientes prontos</a></li>
-<li><a href="https://cssgradient.io/gradient-backgrounds/">Outros gradientes</a></li>
-<li><a href="https://www.webdesign-inspiration.com/">Exemplos de layouts para se inspirar</a></li>
-<li><a href="https://andreasbm.github.io/web-skills/">Web Skills - habilidades Web </a></li>
-<li><a href="https://origamid.com/projetos/flexbox-guia-completo/">Origamid - Flex Box</a></li>
-<li><a href="https://css-tricks.com">CSS Tricks</a></li>
-<li><a href="https://http.cat/">HTTP Cats - um jeito fofinho de entender Status HTTP</a></li>
-</ul>
+<h3 id="2-exibir-nome-de-livros-disponiveis">2. Exibir nome de livros disponíveis<a class="headerlink" href="#2-exibir-nome-de-livros-disponiveis" title="Permanent link">&para;</a></h3>
+<p>Exibir nome de livros disponíveis (com status igual a 1) e a descrição de seu gênero literário.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">A</span><span class="p">.</span><span class="n">titulo</span><span class="p">,</span><span class="w"> </span><span class="n">B</span><span class="p">.</span><span class="n">id</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">biblioteca_livro</span><span class="w"> </span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">biblioteca_genero</span><span class="w"> </span><span class="n">B</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">A</span><span class="p">.</span><span class="n">cod_genero_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">B</span><span class="p">.</span><span class="n">id</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="k">AND</span><span class="w"> </span><span class="n">A</span><span class="p">.</span><span class="n">status</span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+</code></pre></div>
+<p>RESULTADO:</p>
+<p><img alt="img_16.png" src="../img_16.png" /></p>
+<h3 id="3-exibir-livros-de-determinado-genero">3. Exibir livros de determinado gênero<a class="headerlink" href="#3-exibir-livros-de-determinado-genero" title="Permanent link">&para;</a></h3>
+<p>Exibir nome, autor e status de livros de Literatura Brasileira.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">A</span><span class="p">.</span><span class="n">titulo</span><span class="p">,</span><span class="w"> </span><span class="n">A</span><span class="p">.</span><span class="n">autor</span><span class="p">,</span><span class="w"> </span><span class="n">A</span><span class="p">.</span><span class="n">status</span><span class="p">,</span><span class="w"> </span><span class="n">B</span><span class="p">.</span><span class="n">descricao</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">biblioteca_livro</span><span class="w"> </span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">biblioteca_genero</span><span class="w"> </span><span class="n">B</span><span class="w"> </span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">A</span><span class="p">.</span><span class="n">cod_genero_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">B</span><span class="p">.</span><span class="n">id</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="k">AND</span><span class="w"> </span><span class="n">B</span><span class="p">.</span><span class="n">descricao</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Literatura Brasileira&#39;</span>
+</code></pre></div>
+RESULTADO:</p>
+<p><img alt="img_18.png" src="../img_18.png" /></p>
+<h3 id="4-usando-a-funcao-count">4. Usando a função COUNT()<a class="headerlink" href="#4-usando-a-funcao-count" title="Permanent link">&para;</a></h3>
+<p>Query para exibir usuários que mais fizeram empréstimos:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">A</span><span class="p">.</span><span class="n">nome_cliente</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="n">B</span><span class="p">.</span><span class="n">cod_cliente_id</span><span class="p">)</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">biblioteca_cliente</span><span class="w"> </span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">biblioteca_emprestimo</span><span class="w"> </span><span class="n">B</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">A</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">B</span><span class="p">.</span><span class="n">cod_cliente_id</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">A</span><span class="p">.</span><span class="n">nome_cliente</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="k">HAVING</span><span class="w"> </span><span class="k">COUNT</span><span class="w"> </span><span class="p">(</span><span class="n">B</span><span class="p">.</span><span class="n">cod_cliente_id</span><span class="p">)</span>
+</code></pre></div>
+<p><img alt="img_20.png" src="../img_20.png" /></p>
+<h2 id="observacoes">Observações<a class="headerlink" href="#observacoes" title="Permanent link">&para;</a></h2>
+<p>O exercício proposto é extremamente simplificado e o único objetivo é o de demonstrar minimamente a ordenação de comandos quando queremos fazer uma consulta (query) utilizando a linguagem SQL.</p>
+<p>Ainda haveria muito a explorar, como por exemplo, a criação de uma tabela EDITORA para a tabela LIVROS, ou a tabela de ENDEREÇO completo para a tabela CLIENTES.</p>
 
 
   
