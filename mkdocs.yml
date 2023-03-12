@@ -131,6 +131,7 @@ nav:
     - Modelo Entidade-Relacionamento: banco_de_dados/entidade-relacionamento.md
     - Modelo Relacional: banco_de_dados/relacional.md
     - Normalização: banco_de_dados/normalizacao.md
+    - Exercício SQL: banco_de_dados/exercicio_sql.md
     - NoSQL: banco_de_dados/nosql.md
   - Estrutura de Dados:
     - Ementa: estrutura_dados/est.md
