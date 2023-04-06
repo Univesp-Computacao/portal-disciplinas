@@ -36,9 +36,6 @@ entre eles: classes, objetos, interfaces, herança e polimorfismo; Introduzir t�
 exceções; noções de padrões de projeto (explorando alguns exemplos como Observer, Adapter, Null Object); Apresentar
 noções de aspectos, funções anônimas, closures e técnicas funcionais (Map,Filter, Fold, etc).
 
-### :zap: Redes
-
-
 
 <p align="center"> <img src="logo.png" alt="logo" width="75" height="75"/> </p>
 
